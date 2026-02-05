@@ -1,0 +1,23 @@
+.A1 {
+    border-radius: 50%;
+    background-color:#70ef70;
+    color: white;
+    border: 0px;
+}
+.A2 {
+    background-color: whitesmoke;
+    color: lightblue;
+    border-color: lightblue;
+    border-radius: 30px;
+    font-weight: bolder;
+    padding: 1px 33px;
+}
+.A3 {
+    color: azure;
+    background-color: blue;
+    border-radius: 1px;
+    border-color: rgb(34, 14, 14);
+    border: 2px solid black;
+    box-shadow: 2px 3px 1px  black;
+    
+}
