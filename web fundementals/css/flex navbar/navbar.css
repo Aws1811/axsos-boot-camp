@@ -1,24 +1,29 @@
 .nav {
-    
+    display: flex;
+    align-items: center;
 }
 ul {
-    justify-content: flex-end;
     display: flex;
+    justify-content: space-around;
     list-style: none;
 }
 a {
     text-decoration: none;
     color: #BEBEBE;
+    margin-right: 20px;
 }
 .active {
     color: #F6F6F6;
 }   
 .btn {
     color: #F6F6F6;
-    background-color: #17A2B8;
-    box-shadow: ;
+    border: 2px;
+    background-color: #17A2B8;  
+    box-shadow: 1px 1px 1px 4px black;
 }
 h1 {
+    margin-right: 0px;
+    display:inline-block;
     color: #FEFEFE;
     margin-left: 20px;
 }
@@ -26,6 +31,6 @@ div {
     background-color: #333333;
 }
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

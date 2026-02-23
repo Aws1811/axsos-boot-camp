@@ -1,16 +1,16 @@
 .A1 {
     border-radius: 50%;
-    background-color:#70ef70;
+    background-color:#00D1B2;
     color: white;
     border: 0px;
 }
 .A2 {
     background-color: whitesmoke;
-    color: lightblue;
-    border-color: lightblue;
+    color: #49B2B3;
+    border-color: #49B2B3;
     border-radius: 30px;
     padding:2px 20px;
-    padding-left: 3.589432%;
+    font-weight: bolder;
     border: solid;
     width: 150px;
     
@@ -22,5 +22,5 @@
     border-color: rgb(34, 14, 14);
     border: 2px solid black;
     box-shadow: 2px 3px 1px  black;
-    
+    padding: 5px 10px;
 }
