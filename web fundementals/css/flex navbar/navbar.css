@@ -1,0 +1,31 @@
+.nav {
+    
+}
+ul {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #BEBEBE;
+}
+.active {
+    color: #F6F6F6;
+}   
+.btn {
+    color: #F6F6F6;
+    background-color: #17A2B8;
+    box-shadow: ;
+}
+h1 {
+    color: #FEFEFE;
+    margin-left: 20px;
+}
+div {
+    background-color: #333333;
+}
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
