@@ -1,10 +1,12 @@
-.A1 {
+.plus {
+    display: block;
     border-radius: 50%;
     background-color:#00D1B2;
     color: white;
-    border: 0px;
+    border: 5px;
+    margin-bottom: 20px;
 }
-.A2 {
+.search {
     background-color: whitesmoke;
     color: #49B2B3;
     border-color: #49B2B3;
@@ -12,14 +14,14 @@
     padding:2px 20px;
     font-weight: bolder;
     border: solid;
+    margin-bottom: 20px;
     width: 150px;
     
 }
-.A3 {
+.account {
     color: azure;
     background-color: blue;
     border-radius: 1px;
-    border-color: rgb(34, 14, 14);
     border: 2px solid black;
     box-shadow: 2px 3px 1px  black;
     padding: 5px 10px;
