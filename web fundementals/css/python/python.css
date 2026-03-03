@@ -1,0 +1,107 @@
+body {
+    width: 970px;
+    margin: auto 0%;
+}
+img {
+    width: 350px;
+    height: 100px;
+    flex-shrink: 80%;
+}
+.upper {
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+}
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sizet {
+    display: flex;
+    align-items: center;
+}
+.sizet p {
+    margin: 0px;
+}
+.sizet  a {
+    margin:2px;
+    color: rgb(231 , 198 , 58 ,1);
+}
+/* هون مش راضي ينزل ل تحت */
+.search {
+    background-color:#444444 ;
+    width: 300px;
+    margin-right: 10px;
+    justify-content: center;
+    border-radius: 16px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 3px black;
+}
+#search {
+    padding: 10px;
+    text-align: center;
+}
+button {
+    background-color: #255074;
+    color: white;
+    padding: 6px 8px;
+    border: 2px solid #C0C0C0;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px black ;
+}
+.mainpage {
+    background-color:#245075 ;
+    display: flex;
+    flex-direction: column;
+    width: 970px;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3E7AAD;
+    color: white;
+    height: 50px;
+    width: 900px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px black;
+    margin-top: 30px;
+}
+a {
+    color: white;
+    margin-left: 8px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainspeech {
+    display: flex;
+}
+#links {
+    margin:40px 40px;
+    white-space: nowrap;
+    height: 180px;
+    list-style-type: "»";
+    color: #E4D263;
+}
+.speech{
+    color: white;
+    text-align: center;
+    width: 630px;
+}
+.speech .links {
+    color: #EBD347;
+}
+.speech h3 {
+    margin: 5px 0px;
+}
+.speech p {
+    color: white;
+}
