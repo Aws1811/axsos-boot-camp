@@ -38,13 +38,15 @@ h1 {
     text-align: left;
 }
 .allpage {
+    justify-content: center;
+    margin: 0 auto;
     display: flex;
     margin-top: 4%;
 }
-.first2pages {
-    margin-left: 500px;
+.first2pages { 
     margin-right: 30px;
 }
+
 .pagemain {
     display: flex;
     width: 400px;
