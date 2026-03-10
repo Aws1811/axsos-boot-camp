@@ -7,14 +7,10 @@ body {
     font-weight: bold;
     align-items: center;
     background-color: black;
-    justify-content:  space-around;
-}
-ul {
-    list-style: none;
-    margin: 0 0;
+    justify-content:  space-evenly;
 }
 a {
-    margin-left:40px;
+    /* margin-left:40px; */
     text-decoration: none;
     color: #A8A8A8 ;
 }
@@ -22,7 +18,11 @@ a {
     color:rgb(255, 255, 255);
 }
 .navbarlist {
+    gap: 40px;
+    list-style: none;
+    margin: 0;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 button {
@@ -33,20 +33,14 @@ button {
     background-color: #17A2B8;
 }
 h1 {
-    display: inline-block;
     color: white;
-    text-align: left;
 }
 .allpage {
     justify-content: center;
-    margin: 0 auto;
     display: flex;
     margin-top: 4%;
+    gap:30px ;
 }
-.first2pages { 
-    margin-right: 30px;
-}
-
 .pagemain {
     display: flex;
     width: 400px;
@@ -89,7 +83,7 @@ h1 {
 }
 .mainp {
     font-weight: bold;
-    width: 130%;
+    width: 500px;
     margin: 1%;
 }
 .editprofile {
@@ -99,7 +93,6 @@ h1 {
     margin-left: 1%;
 }
 .gear {
-    margin-right: 0%;
     vertical-align: bottom;
     width: 15px;
     height: 15px;
@@ -139,7 +132,6 @@ h1 {
     background-color: #333333;
     display: flex;
     border-radius: 1%;
-    width: 100%;
     align-items: center;
     height: 50px;
 }
@@ -155,7 +147,7 @@ h1 {
     width: 10%;
     background-color: #CCCCCC;
     margin-left: 15px;
-    border-radius: 50% ;
+    border-radius: 50%;
 }
 .linereq{
     display: flex;
@@ -172,12 +164,10 @@ h1 {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0px 5px;
 }
 .nameuser {
     margin:  1px 50px 1px 10px;
-    display: inline-block;
 }
 .yourConnection {
     margin-top: 30px;
