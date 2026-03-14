@@ -1,0 +1,148 @@
+
+.container{
+    max-width: 800px;
+    margin: 4px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav {
+    margin: 0px 0px 30px 0px;
+    align-items: center;
+    width: 100%;
+    min-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #C1C1C1;
+}
+h1 {
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+}
+input {
+    border: 3px solid black;
+    font-size: large;
+    text-align: left;
+    height: 40px;
+    width: 320px;
+}
+nav button {
+    width:70px ;
+    height: 30px;
+    background-color:#2B77E1 ;
+    color: white;
+    border: 3px solid black;
+    box-shadow: 2.5px 2.5px 0px black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section{
+    padding: 10px 40px 20px 10px; 
+    display: flex;
+    border: 4px solid black;
+}
+
+section button {
+    border: 3px solid black;
+    font-weight: bold;
+    box-shadow: 2px 2px;
+    background-color: #FED966;
+    margin-top: 20px;
+    width:96px ;
+    height: 40px;
+}
+a {
+    color: #15578A;
+}
+
+section h2 , p {
+    text-align: center;
+    font-family: cursive;
+}
+article p {
+    margin: 20% 0%;
+    width: 316px;
+    font-size: 20px;
+}
+section h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+aside {
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+}
+aside p{
+    white-space: nowrap;
+    font-size: 20px;
+}
+.col2 section button {
+    background-color:#92C47D ;
+    width: 240px;
+    height: 48px;
+    font-size: large;
+}
+.col2 h2 {
+    font-size: 32px;
+    width: 240px;
+    text-align: start;
+}
+h2 span{
+    font-weight: bold;
+}
+.col2 section {
+    align-items: start;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    padding:8px 16px 24px ; 
+}
+.notif {
+    position: sticky;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    bottom: 68%;
+    left: 45%;
+    width: 180px;
+    height: 120px;
+    border: 3px solid black;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.notif p {
+    text-align: start;
+    margin: 12px;
+
+}
+.notif p:first-child {
+    font-size: large;
+    font-weight: bold;
+}
+.notif button{
+    display:block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    align-self: center;
+    border: none;
+    border-top: 3px solid black;
+    background-color: #ffffff;
+}

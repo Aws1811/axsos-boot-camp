@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="clicker.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Dojonary</h1>
+            <input type="search" name="search" id="search" placeholder="Search  ">
+            <button class="click" onclick="signout(this)">Login</button>
+        </nav>
+        <main>
+            <div class="col1">
+                <section>
+                    <aside>
+                        <h2>ninja</h2>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button class="likebtn"> <span class="likes">13</span> likes</button>
+                    </aside>
+                    <article><p>A practitioner skilled in the 
+                        <a href="#">Japanese</a> art of <a href="">ninjutsu</a></p></article>
+                </section>        
+                <section>
+                    <aside>
+                        <h2>ninja</h2>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button class="likebtn"><span class="likes">37 </span> likes</button>
+                    </aside>
+                    <article><p>A <a href="#">programmer</a> who breaks down problems with 
+                        <a href="#">zen</a>-like focus</p></article>
+                </section>
+            </div>
+            <div class="col2">
+                <section> 
+                    <h2>Dojonary is defined by <span>YOU</span></h2>
+                    <button onclick="remove(this)" class="def">Add definition</button>
+                </section>
+            </div>
+        </main>
+    </div>
+    <div class="notif">
+        <p> this page says </p><p>ninja was liked</p>
+        <button class="ok">Ok</button>
+    </div>
+    <script src="clicker .js" ></script>
+</body>
+</html>
