@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button class="btn" onclick="login(this)">Login</button>
+            
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="flex-container">
+        <!-- left column -->
+        <div class="col-l">
+            <figure class="placeholder">
+                <video 
+                    src="https://res.cloudinary.com/dxwrn1lxp/video/upload/v1773778214/20744573-uhd_3840_2160_25fps_pgnlxr.mp4" 
+                    controls >
+                </video>
+            </figure>
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>palestine in our hearts</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="assets/user.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Aws Sleebi</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="sub(this)">Subscribe</button>
+            </div>
+        </div> 
+        <!-- right column -->
+        <div class="col-r">
+            <h3 class="sub-header">Up Next</h3>
+            <div class="video-small">
+                <section onmouseover="Over(this,2)" onmouseout="Out(this)">
+                    <img src="assets/video-placeholder.png"
+                    alt="video placeholder" class="vid-s" onmouseover="show(this)">
+                <video
+                    src="https://res.cloudinary.com/dxwrn1lxp/video/upload/v1773778533/6124699-hd_1920_1080_30fps_prtsjo.mp4" 
+                    onmouseover="show(this)" onmouseout="hide(this)" muted>
+                </video>
+                </section>
+                <span class="video-title">policeman</span>
+            </div>
+            <div class="video-small">
+                <section onmouseover="Over(this,2)" onmouseout="Out(this)">
+                    <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s" onmouseover="show(this)">
+                <video
+                    src="https://res.cloudinary.com/dxwrn1lxp/video/upload/v1773778525/13721796-hd_1920_1080_60fps_eyxaqh.mp4" 
+                    onmouseover="show(this)" onmouseout="hide(this)" muted>
+                </video>
+                </section>
+                <span class="video-title">guns battle</span>
+            </div>
+            <div class="video-small">
+                <section onmouseover="Over(this,2)" onmouseout="Out(this)">
+                    
+                    <img src="assets/video-placeholder.png"
+                    alt="video placeholder" class="vid-s" onmouseover="show(this)">
+                    <video
+                    src="https://res.cloudinary.com/dxwrn1lxp/video/upload/v1773778270/5009679-hd_1920_1080_25fps_bcfilh.mp4" 
+                    onmouseover="show(this)" onmouseout="hide(this)" muted>
+                </video>
+
+                </section>
+                <span class="video-title">what crow's really love?</span>
+            </div>
+            <div class="video-small" >
+                <section onmouseover="Over(this,2)" onmouseout="Out(this)">
+                    <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <video
+                    src="https://res.cloudinary.com/dxwrn1lxp/video/upload/v1773778254/18803991-uhd_3840_2160_30fps_iv8pac.mp4"
+                    class="videos" onmouseover="show(this)" onmouseout="hide(this)" muted>
+                </video>
+                </section>
+                <span class="video-title">random wolf</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
