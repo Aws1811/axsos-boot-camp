@@ -34,7 +34,7 @@ input {
     width: 320px;
 }
 nav button {
-    width:70px ;
+    width:fit-content ;
     height: 30px;
     background-color:#2B77E1 ;
     color: white;

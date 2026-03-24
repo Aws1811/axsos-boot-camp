@@ -11,7 +11,6 @@ likeButtons.forEach(function(likebtn){
         spanlike.textContent = count;
         likebtn.disabled = true;
     });
-    
     okey.addEventListener("click",function(){
         notif.style.display = "none";
     })
@@ -25,7 +24,7 @@ function remove(element){
 
 function signout(change){
     change.innerText = "Sign Out";
-    change.style.width = "80px";
+    // change.style.width = "80px";
 }
 
 
