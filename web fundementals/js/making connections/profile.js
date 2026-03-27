@@ -2,8 +2,10 @@ var sign = document.querySelector(".signout");
 sign.addEventListener("click",function(){
     if(sign.innerText ==="Sign in"){
         sign.innerText = "Sign out";
+        sign.style.backgroundColor ="red";
     }else {
         sign.innerText = "Sign in";
+        sign.style.backgroundColor = "#17A2B8";
     }
 }); 
 

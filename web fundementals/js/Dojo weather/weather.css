@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    margin: 10% auto;
+    position: relative;
+    width:689px ; 
+    /* height: 562px;
+    /* width: 1378px;
+    height:1124px ; */
+
+}
+nav {
+align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #9FC5F8;
+}
+nav h1,nav a{
+    color: white;
+    text-decoration: none;
+    margin: 16px;
+}
+nav div{
+    display: flex;
+}
+main {
+    /* width:689px ; 
+    height: 562px; */
+    margin: 0 auto;
+    /* width: 74%; */
+}
+main div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+}
+main div:first-of-type h2{
+    margin: 24px 0;
+}
+main div:first-of-type div {
+    display: flex;
+    gap: 10px;
+}
+select{
+    border: 3px solid black;
+    font-weight: bold;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+section {
+    margin-top: 20px;
+    min-width: 150px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.red1{
+    color: red;
+    display: none;
+}
+.red{
+    display: inline-block;
+    color: red;
+}
+.blue {
+    display: none;
+    display: inline-block;
+    color: #3A82Ef;
+}
+.blue1{
+    display: none;
+    color: #3A82Ef;
+}
+.row{
+    margin-bottom: 8px;
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+.lastmaindiv{
+    align-items: center;
+    padding: 12px;
+    display: flex;
+    border: 3px solid black;
+}
+.lastmaindiv button {
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #9FC5F8;
+    box-shadow: 2px 2px 0px 1px;
+}
+.lastmaindiv div{
+    margin: 0 20px;
+}
+article {
+    position: absolute;
+    bottom: 72%;
+    left: 38%;
+    border: 2px solid black;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 200px;
+    height: 140px;
+    background-color: white;
+}
+article button {
+    height: 40px;
+    border: 1px solid black;
+    border-top: 3px solid black;
+    background-color: #FFFFFF;
+    border-end-end-radius: 16px;
+    border-end-start-radius: 16px;
+    font-weight: bold;
+}
+article h4 {
+    padding: 8px;
+}
+article p{
+    padding: 8px;
+}
+
