@@ -63,9 +63,7 @@ function fibonacciArray (n){
     for(var i =0;i<=n-3;i++){
         fibArr.push(fibArr[i]+fibArr[i+1]);
     }
-
     return fibArr;
-
 }
-var result = fibonacciArray(18);
+var result = fibonacciArray(5);
 console.log(result);

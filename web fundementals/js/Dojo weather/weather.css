@@ -1,36 +1,37 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    box-sizing: border-box;
+
+    font-family: 'roboto',sans-serif;
+    /* font-family: cursive; */
 }
 body{
-    margin: 10% auto;
+    margin: 0 auto;
     position: relative;
-    width:689px ; 
-    /* height: 562px;
-    /* width: 1378px;
-    height:1124px ; */
-
 }
 nav {
-align-items: center;
+    padding: 12px;
+    margin-bottom: 25px;
+    align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #9FC5F8;
 }
-nav h1,nav a{
+h1,nav a{
     color: white;
     text-decoration: none;
-    margin: 16px;
+    margin: 12px;
+
 }
 nav div{
+    gap: 30px;
     display: flex;
 }
 main {
-    /* width:689px ; 
-    height: 562px; */
+    max-width: 90%;
+    width: 1000px;
     margin: 0 auto;
-    /* width: 74%; */
 }
 main div:first-child{
     display: flex;
@@ -58,10 +59,10 @@ select{
 }
 section {
     margin-top: 20px;
-    min-width: 150px;
+    min-width: 200px;
     justify-content: space-around;
     align-items: center;
-    min-height: 250px;
+    min-height: 400px;
     background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
@@ -113,15 +114,15 @@ img {
 }
 article {
     position: absolute;
-    bottom: 72%;
-    left: 38%;
+    bottom: 78%;
+    left: 44%;
     border: 2px solid black;
     display: none;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 20px;
-    width: 200px;
-    height: 140px;
+    width: 222px;
+    height: 150px;
     background-color: white;
 }
 article button {
@@ -139,4 +140,10 @@ article h4 {
 article p{
     padding: 8px;
 }
-
+.row2,.row1{
+    margin-bottom: 8px;
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+    display: none;
+}
