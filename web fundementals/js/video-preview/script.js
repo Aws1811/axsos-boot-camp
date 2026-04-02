@@ -34,7 +34,7 @@ function Out(params) {
 }
     function show(elem){
         elem.play();
-        elem.currentTime = 0 ;
+        elem.currentTime = 0;
     }
     function hide(elem){
         elem.pause();

@@ -15,17 +15,19 @@ nav {
     margin-bottom: 25px;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #9FC5F8;
 }
 h1,nav a{
     color: white;
     text-decoration: none;
     margin: 12px;
-
+}
+nav a{
+    font-size: 20px;
 }
 nav div{
-    gap: 30px;
+    gap: 40px;
     display: flex;
 }
 main {
@@ -114,7 +116,7 @@ img {
 }
 article {
     position: absolute;
-    bottom: 78%;
+    bottom: 70%;
     left: 44%;
     border: 2px solid black;
     display: none;
