@@ -1,0 +1,129 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0 auto;
+    background-image: url(hero-bg.png);
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+/* nav */
+nav{
+    margin: 0;
+    padding:10px 40px;
+    background-color: rgb(255, 255, 255 , 0.8) ;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    position: fixed;
+}
+nav img{
+    width: 30px;
+    height: 30px;
+}
+nav div{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+nav a{
+    font-size: 20px;
+}
+nav a:nth-child(2){
+    padding: 8px;
+    border-right:1px solid black ;
+    border-left:1px solid black ;
+}
+/* nav */
+h1,h2,a{
+    color: #263179;
+}
+h2{
+    width: 70%;
+font-size: 40px;
+}
+p{
+    margin: 0;
+    align-self: center;
+    width: 100%;
+    font-size: 20px;
+}
+.section{
+    border-bottom: 2px solid black;
+    display: flex;
+    padding: 40px;
+}
+.section img{
+    width: 60%;
+    height: 30em;
+}
+.section div{
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/* buttons */
+.thebuttons{
+    margin-top:10% ;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px black;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 180px;
+    height: 50px;
+    color: white;
+    background-color: #284bf9;
+}
+
+#firstsection div{
+    align-items: start;
+}
+#section2 div{
+    text-align: center;
+}
+#section2 div p{
+    width: 80%;
+}
+#hide div h2{
+    text-align: center;
+}
+#hide {
+    display: none;
+}
+.row{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* card */
+.row h2{
+    width: 30%;
+}
+.row button{
+    margin: 0;
+}
+.card{
+    margin: 60px 0px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 50%;
+    height: 100%;
+}
+#hiddencard{
+    display: none;
+}
+.red{
+    color: red;
+}
+.underline{
+    text-decoration: underline;
+}
+/* card */

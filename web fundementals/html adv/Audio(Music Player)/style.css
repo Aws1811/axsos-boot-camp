@@ -1,0 +1,50 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 10% auto;
+    background-color: rgb(242, 238, 232);
+}
+main{
+    display: flex;
+}
+main div{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-decoration: underline;
+}
+h1 img{
+    padding:  0 20px;
+
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+div img{
+    width: 140px;
+    height: 120px;
+}
+.first{
+    margin: 20px;
+    width: 70%;
+}
+.sec{
+    gap: 5px;
+    width: 30%;
+    margin: 20px 20px 20px 0px;
+}
+audio{
+    width: 100%;
+}
+.sec div{
+    height: 5%;
+    border-radius: 10px;
+    background-color: rgb(196, 193, 189);
+}
+.sec p{
+    margin: 0;
+}

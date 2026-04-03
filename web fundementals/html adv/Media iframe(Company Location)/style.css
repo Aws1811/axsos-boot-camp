@@ -1,0 +1,16 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(241, 241, 233);
+}
+main{
+    margin-top: 10%;
+    justify-content: center;
+    gap: 60px;
+    display: flex;
+}
+main section{
+    padding: 20px;
+    background-color: white;
+}
