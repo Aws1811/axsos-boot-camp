@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>job</title>
+    </head>
+    <body>
+        <form>
+            <h1>job application form</h1>
+            <label for="name" title="at least first name and sur name including" >Full Name:-</label>
+            <input type="text" title="write here!!" placeholder="your full name">
+            <label for="email" title="your email wrriten here">Email Address:-</label>
+            <input type="email" title="write here!!" placeholder="example@gmail.com">
+            <label for="number" title="+970 & +972">Phone number:-</label>
+            <input type="number" title="write here!!" placeholder="+972 0569123456">
+            <label for="year" title="less than 0  year consider also a 1 year">Years of Experience:-</label>
+            <input type="year" title="write here!!" placeholder="1 year...">
+            <legend title="Hybind if u can work with each of them">Prefered  work type:-</legend>
+            <fieldset >
+            <div>
+                <input type="radio" name="work">remote.
+                <input type="radio" name="work">On-site.
+                <input type="radio" name="work">Hybind.
+            </div>
+            </fieldset>
+            <label for="cv">Upload CV (PDF only):-</label>
+            <input type="file" value="pdf" class="file">
+            <label for="date">Available Start Date :-</label>
+            <input type="date">
+            <label for="text">cover letter</label>
+            <textarea name="" id="" placeholder="tell us about your self"></textarea>
+            <label for="id">Application ID (auto-generated):-</label>
+            <input type="text" readonly value="JOB-1744029932">
+            <label for="salary">Salary expcteations</label>
+            <input type="range" min="3000" max="4000" step="100" value="3500">
+            <div class="slap">
+                <p>|</p>
+                <p>|</p>
+                <p>|</p>
+                <p>|</p>
+                <p>|</p>
+                <p>|</p>
+            </div>
+            <div>
+                <p>3000$/m</p>
+                <p>200</p>
+                <p>400</p>
+                <p>600</p>
+                <p>800</p>
+                <p>4000$/m</p>
+            </div>
+            <button type="submit">submit</button>
+            <input type="reset">
+        </form>
+
+
+    </body>
+</html>
