@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #c3d9ff, #fce4ff);
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #3a1d71;
+    font-size: clamp(26px, 5vw, 56px);
+    margin-bottom: 40px;
+}
+
+/* Responsive Card Style */
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 25px;
+    max-width: 700px;
+    margin: 25px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #32145c;
+    margin-bottom: 10px;
+}
+.card:nth-of-type(1) img{
+    width: 70%;
+    flex-shrink:1 ;
+}
+.card:nth-of-type(2) button{
+    font-size: 60px;
+    color: #760431;
+    background-color: #00d5ff;
+    width: 10em;
+    height: 4em;
+}
+.card:nth-of-type(3) div:nth-child(2){
+    width: fit-content;
+background-color: rgb(45, 40, 40);
+color: #00d5ff;
+}
+.card:nth-of-type(4) div:nth-child(2){
+    width: 100%-80px;
+    background-color: rgb(255, 73, 73);
+    height: 4em;
+}
+.card:nth-of-type(5) div:nth-child(2){
+    width: 400px;
+    height: 300px;
+    flex-shrink: 1;
+    max-width: 500px;
+    max-height: 500px;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: black;
+}
