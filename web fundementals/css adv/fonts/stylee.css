@@ -1,0 +1,16 @@
+h1{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@font-face {
+    font-family: "CrazyGhost";
+    src: url("./fonts/CrazyGhost.woff2") format("woff2"),
+        url("./fonts/CrazyGhost.woff") format("woff");
+}
+h2{
+    font-family: "CrazyGhost",cursive;
+}
+p:first-of-type{
+    font-family: "Cinzel", serif;
+}
