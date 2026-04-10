@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #899c85;
+}
+main{
+    box-shadow: 1px 1px 8px 3px rgb(102, 154, 131) ;
+    padding: 3em;
+    border: 8px solid ;
+    border-radius: 20px;
+    gap: 2rem;
+    align-items: center;
+    margin: 1% 0 0 18%;
+    width: 60%;
+    height:55vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #366139;
+}
+ul{
+    box-shadow: 2px 2px 32px 20px #d7c289 ;
+    border: 6px solid #f5e7bf ;
+    border-radius: 16px;
+    gap: 2rem;
+    color: #ebebe7;
+    padding: 4em 9em;
+    width: 48%;
+    min-height: fit-content;
+    min-width: 29em;
+    background-color: #32583f;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+li{ 
+    list-style-position: inside;
+    min-width: 30em;
+    position: relative;
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 8px 0px #f5e7bf inset;
+}
+div{
+    padding-left:40px ;
+    border-left:4px solid rgb(28, 36, 24)  ;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    border-radius: 20px;
+    padding: 0.28em;
+    color: azure;
+    background-color: #3F110F ;
+    font-size: 55px;
+}
+h3{
+    vertical-align: top;
+    text-decoration: underline;
+    border-radius: 12px;
+    padding: 4px;
+    max-width: fit-content;
+    font-size: 38px;
+    text-shadow: 2px 2px 8px black;
+}
+p{
+    font-size: 30px;
+}
+p:first-of-type{
+    margin:8px 0px ;
+}
+p:nth-of-type(2){
+    color: #f75c4c;
+}
+
+li:first-of-type{
+    
+    list-style-image: url(shawarma-120px.png);
+}
+li:nth-of-type(2){
+    list-style-image: url(hummus-120px.png);
+}
+
+li:nth-of-type(3){
+    list-style-image: url(falafel-120px.png);
+}
+
+li:nth-of-type(4){
+    list-style-image: url(kebab-120px.png);
+}
+
+li:nth-of-type(5){
+    list-style-image: url(tabbouleh-120px.png);
+}
+
+li:nth-of-type(6){
+    list-style-image: url(fattoush-120px.png);
+}
+
+li:nth-of-type(7){
+    list-style-image: url(spaghetti-120px.png);
+}
+
+li:nth-of-type(8){
+    list-style-image: url(cookies-120px.png);
+}
+
+li:nth-of-type(9){
+    list-style-image: url(corn-120px.png);
+}
+li::marker{
+    font-size: 180px;
+}
