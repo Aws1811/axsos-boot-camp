@@ -1,0 +1,24 @@
+*{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: gray;
+}
+article{
+    overflow: scroll;
+    padding: 4em;
+    color: white;
+    background-color: black;
+    width: 400px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+}
