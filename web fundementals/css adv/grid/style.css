@@ -1,0 +1,44 @@
+.task1-grid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.task1-grid div{
+    background-color: cadetblue;
+}
+@media (max-width: 700px) {
+    .task1-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 450px) {
+    .task1-grid {
+    grid-template-columns: 1fr;
+    }
+}
+img{
+    max-width: 22%;
+    min-width: 20%;
+    width: auto;
+}
+header,aside,main,footer{
+    align-content: center;
+    min-width: 4em;
+    text-align: center;
+    height: 6em;
+    background-color: cadetblue;
+}
+.layout{
+    width: 100%;
+    display: grid;
+    row-gap: 1em;
+    column-gap: 2em;
+    grid-template-columns: repeat(2,1fr);
+}
+aside{
+    min-width: 4em;
+    width: 30%;
+    height: 100%;
+    grid-row: 3 span;
+}

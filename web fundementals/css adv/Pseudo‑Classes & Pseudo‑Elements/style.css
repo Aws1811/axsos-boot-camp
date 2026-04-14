@@ -15,6 +15,8 @@ body{
     background-color: #533747;
 }
 main{
+    width: 100%;
+    height: 100vh;
     gap: 2em;
     align-items: center;
     display: flex;
@@ -25,7 +27,10 @@ li{
     padding-left: 0.4em;
 }
 section{
-    color: #f5f0e8;
+    min-width: 12em;
+    max-width: 20em;
+    flex: 1;
+    color: #f5f0e8; 
     display: flex;
     flex-direction: column;
     border: 4px solid #86bbbd;
@@ -48,7 +53,6 @@ h1,h2{
     font-size: 40px;
 }
 form{
-    /* height: 10em; */
     gap: 1em;
     padding: 2em;
     width: 30em;
@@ -58,7 +62,10 @@ form{
     background-color: #6a6b83;
 }
 div{
-    gap: 6em;
+    transition: 0.044s ease;
+    flex-wrap: wrap;
+    width: 90vw;
+    gap: 3em;
     display: flex;
 }
 section:nth-of-type(1){
@@ -77,6 +84,7 @@ section:nth-of-type(3){
 border-top: 4px solid #820263;
 }
 input,textarea{
+    align-content: center;
     border-radius: 8px;
     font-family: sans-serif;
     height: 2.5em ;
