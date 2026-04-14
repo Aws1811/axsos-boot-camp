@@ -51,7 +51,7 @@ div{
     border-left:4px solid rgb(28, 36, 24)  ;
     position: absolute;
     left: 25%;
-    top: 25%;
+    top: 25%; 
     justify-content: center;
     display: flex;
     flex-direction: column;
