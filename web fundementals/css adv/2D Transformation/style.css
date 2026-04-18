@@ -24,6 +24,7 @@ header{
     align-items: center;
     height: 30vh;
 }
+/* the main */
 main{
     gap: 2rem;
     max-width: 100%;
@@ -48,6 +49,7 @@ h3,p{
     padding: 0.8rem;
     text-align: center; 
 }
+/* the cards */
 figure{
     overflow: hidden;
     transition: 0.3s ease;
