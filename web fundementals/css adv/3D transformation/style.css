@@ -16,7 +16,7 @@ main,div{
 }
 main{
     perspective: 1000px;
-    perspective-origin: -300% 50%;
+    perspective-origin: 50% 40%;
 
     height: 34rem;
     border: 4px solid brown;
@@ -28,6 +28,6 @@ div{
 }
 /* the opning door */
 div:active{
-transform:  rotateY(-150deg) scale(1.01) ;
+transform:  rotateY(-150deg) scaleX(1.08) ;
 transform-origin: left center;
 }
