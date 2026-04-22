@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="hide"></div>
+        <audio src="jjba-dark-rebirth-theme-of-dio-1_S68CctQG.mp3" id="time-stop-theme"></audio>
+        <audio src="Za Warudo - Sound Effect.mp3" id="sound"></audio>
+        <audio src="Dio Time Stop Resume Effect.mp3" id="resume"></audio>
+        <!-- this button for stopping time-->
+        <button>Za Warudo</button>
+        <h1>Ticking Clock</h1>
+        <p>Your task: Use <strong>setInterval()</strong> to make this clock tick every second.</p>
+        <!-- the ticks -->
+        <div id="face">
+        <div id="hour"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+        <div id="center"></div>
+
+            <!-- svg for the sticks around the circle of clock to add them -->
+        <svg id="seconds-scale" width="300" height="300" viewBox="0 0 300 300">
+  <g transform="translate(150,150)">
+    <g id="ticks">
+    </g>
+  </g>
+</svg>
+
+<!-- svg for stopping the time -->
+<svg id="timeStopFX" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="g">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffd700" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <circle id="blast" cx="50" cy="50" r="0" fill="url(#g)" />
+</svg>
+
+<!-- svg for resume the stop time -->
+ <svg id="timeResumeFX" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="g2">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffd700" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <circle id="blastReverse" cx="50" cy="50" r="80" fill="url(#g2)" />
+</svg>
+        <script src="script.js"></script>
+    </body>
+</html>
