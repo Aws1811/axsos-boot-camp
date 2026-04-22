@@ -1,10 +1,12 @@
 // Returns the number of seconds since the start of today
+
 function getSecondsSinceStartOfDay() {
     return new Date().getSeconds() +
         new Date().getMinutes() * 60 +
         new Date().getHours() * 3600;
 }
 // the varibles
+
 var timeMove = document.querySelector("#seconds");
 var min = document.getElementById("minutes");
 var hour = document.getElementById("hour");
@@ -12,25 +14,35 @@ let plus = 0;
 let plusMin = 0;
 let plusHour =0;
 let warudo;
+
 // the moveing clocks function
+
 warudo =  setInterval(function(){
+
     // seconds moveing------------------------------------------------------------
+
     plus=plus+36;
     timeMove.style.transform = `rotate(${plus}deg)  translate(-50%,-100%)`;
     if(plus===360){
+
         // minutes moving------------------------------------------------------------
+
         plus=0;
         plusMin=plusMin+180;
         min.style.transform = `rotate(${plusMin}deg) translate(-50%,-100%)`;
     }
     if(plusMin===360){
+
         // hours moveing------------------------------------------------------------
+
     plusMin=0;
     plusHour=plusHour+36;
     hour.style.transform = `rotate(${plusHour}deg) translate(-50%,-100%)`
     }
     console.log(plus,plusMin,plusHour);
 },1000);
+
+// stopping time code this only work with a hidden button
 
 var za = document.querySelector("button");
 var sound = document.getElementById("sound");
@@ -45,11 +57,12 @@ za.addEventListener('click', function () {
         music.play();
     }, 600);
     setTimeout(function(){
-        // warudo.currentTime = 0;
         clearInterval(warudo);
         fx.classList.add("active");
     }, 2200);
-    
+
+// resume the stopping point will stopped by hidden thing
+
 setTimeout(function () {
         resume.play();
         fx2.classList.add("active");
@@ -66,7 +79,6 @@ setTimeout(function () {
         plusMin = plusMin + 180;
         min.style.transform = `rotate(${plusMin}deg) translate(-50%,-100%)`;
         }
-
         if (plusMin === 360) {
         plusMin = 0;
         plusHour = plusHour + 36;
@@ -75,12 +87,6 @@ setTimeout(function () {
     }, 1000);
     }, 10000);
 });
-
-
-
-
-
-
 
 //an alternative code for svg to make the sticks of corner clock 
 const ticksContainer = document.querySelector("#ticks");
@@ -96,7 +102,7 @@ for (let i = 0; i < 60; i++) {
     tick.setAttribute("transform", `rotate(${i * 6})`);
     ticksContainer.appendChild(tick);
 }
-
+// a little code for a circle in the bottom left  if you click it it will reveal a hidden thing
 var hide = document.querySelector(".hide");
 hide.addEventListener('click',function(){
     za.style.display = "block";
