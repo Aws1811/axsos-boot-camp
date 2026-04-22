@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    background-color: #2a2b47;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+div{
+    background-color: #6e5774;
+    gap: 6rem;
+    display: flex;
+    background-image: url();
+}
+
+h1{
+    background-color: #360825;
+}
+
+h2{
+    border: 4px solid blanchedalmond;
+    width: 30em;
+}
+
+/* button design */
+
+button,p,h1,h2,div{
+    padding: 0.8rem;
+}
+
+p{
+    font-size: 20px;
+    background-color: #051720;
+    align-content: center;
+    height: 6rem;
+    border-radius: 20px;
+}
+
+button{
+    background-color: #5b5271;
+    border: 3px solid black;
+}
+
+button:hover{
+    background-color: #2a2b47;
+    transform: scale(1.1);
+}
+
+/* hidden classes codes */
+
+figure,.big-bro,.little-bro,.cat,.aws,.dad{
+    display: none;
+    position: absolute;
+    left: 10%;
+    width: 10em;
+    height: fit-content;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* pablo brothers and sister */
+
+.little-bro{
+    left: 63%;
+}
+
+.big-bro{
+    left: 25%;
+}
+
+.act{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 8px 4px #fff702,0px 0px 12px 4px #f4a261 inset;
+}
+
+.sis{
+    background-color: pink;
+    box-shadow: 0px 0px 4px 4px white;
+    transform: scale(1.2);
+}
+
+/* pablo him self */
+
+.pablo{
+    background-color: black;
+    color: brown;
+    border: 4px solid white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 8px 8px yellow;
+}
+
+/* cat class */
+
+.cat{
+    background:none;
+    top: 0%;
+    left:78%;
+}
+
+.cats{
+    background-image: url(gang.jpg);
+    transform: scale(1.2);
+}
+
+/* dad class */
+
+.dad{
+    top: 55%;
+    left: 82%;
+    width: 10em;
+    height: 10em;
+}
+
+/*   father class */
+
+.father {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.father::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #7f00ff, #e100ff, #00f0ff);
+    z-index: -1;
+    animation: rotateBorder 4s linear infinite;
+    filter: blur(4px);
+}
+
+.father::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffffff06, #ffffff02);
+    backdrop-filter: blur(6px);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.father > * {
+    position: relative;
+    z-index: 2;
+    opacity: 0.4;
+    filter: blur(1.5px);
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 15px #7f00ff, 0 0 40px #7f00ff33; }
+    50% { box-shadow: 0 0 30px #e100ff, 0 0 80px #e100ff44; }
+}
+
+@keyframes rotateBorder {
+    0% { filter: blur(4px) hue-rotate(0deg); }
+    100% { filter: blur(4px) hue-rotate(360deg); }
+}
