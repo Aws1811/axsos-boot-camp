@@ -1,5 +1,5 @@
 # bank accout class where we do the calculating
-class Bank_account:
+class BankAccount:
     def __init__(self , int_rate = 0 , balance = 0):
         self.int_rate = int_rate
         self.balance = balance
@@ -35,8 +35,8 @@ class User:
 
 # here for let the user  make more than one account
 
-    def new_account(self ,init_rate = 0 ,balance=0 ):
-        self.account.append(Bank_account(init_rate , balance))
+    def new_account(self ,init_rate  ,balance ):
+        self.account.append(BankAccount(init_rate , balance))
         return self
 
 # deposit from the bank account class to make the calculate
@@ -55,14 +55,19 @@ class User:
 
     def display_user_balance(self,account_num=0):
         print(f"User: {self.name}, account {account_num} , Balance: ${self.account[account_num].balance}")
-        return self
+        # return self
 
+    def display_all_users(self):
+        for i in range(len(self.account)):
+            print(self.display_user_balance(i))
 
 # the test case
 user1 = User("Guido van Rossum")
+print("user1 =",user1)
 user1.new_account(0.4, 200).new_account(0.8, 400).new_account(0.1, 100)
 user1.plus_money(50 , 0).plus_money(100 , 2).plus_money(25 , 2).make_withdrawal(75,1)
 user1.display_user_balance(0)
 user1.display_user_balance(1)
 user1.display_user_balance(2)
+user1.display_all_users()
 
