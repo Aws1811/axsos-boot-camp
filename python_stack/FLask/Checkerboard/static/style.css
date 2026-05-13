@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    border: 8px solid darkred;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    justify-content: space-evenly;
+}
+h1{
+    padding: 0.5em;
+    color: white;
+}
+.red , .black{
+    width: 100px;
+    height: 100px;
+}
+.red{
+    background-color: var(--color1);
+}
+.black{
+    background-color:var(--color2);
+}
