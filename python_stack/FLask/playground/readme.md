@@ -4,11 +4,11 @@
 
 **Default route** `/play/`
 
-![Preview 1](preview1.png)
+![Preview 1](preview2.png)
 
-**With parameters** `/play/20/green`
+**With parameters** `/play/50/blue`
 
-![Preview 2](preview2.png)
+![Preview 2](preview1.png)
 
 ## Run the app
 
