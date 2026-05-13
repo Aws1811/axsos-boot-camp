@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="overflow-x-auto border border-gray-500 bg-gray-400">
+  <table class="min-w-full">
+    <thead>
+      <tr class="border-b border-gray-500">
+        <th class="px-16 py-10 text-left text-2xl font-bold text-blue-900 border-r border-gray-500">First Name</th>
+        <th class="px-16 py-10 text-left text-2xl font-bold text-blue-900 border-r border-gray-500">Last Name</th>
+        <th class="px-16 py-10 text-left text-2xl font-bold text-blue-900">Full Name</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+      <tr class="border-b border-gray-500 bg-blue-50">
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500">{{ user['first_name'] }}</td>
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500">{{ user['last_name'] }}</td>
+        <td class="px-16 py-10 text-xl text-blue-600">{{ user['first_name'] }} {{ user['last_name'] }}</td>
+    </tr>
+    {% endfor %}
+      <!-- <tr class="border-b border-gray-500 bg-blue-50">
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500"></td>
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500"></td>
+        <td class="px-16 py-10 text-xl text-blue-600"> </td>
+      </tr>
+      <tr class="bg-blue-50">
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500"></td>
+        <td class="px-16 py-10 text-xl text-blue-600 border-r border-gray-500"></td>
+        <td class="px-16 py-10 text-xl text-blue-600"></td> -->
+      <!-- </tr> -->
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
