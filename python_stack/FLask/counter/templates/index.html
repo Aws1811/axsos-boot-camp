@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counter</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Counter</h1>
-    <p>{{ counter }} Times</p>
-    <button onclick="window.location.href='/plus2'">+2</button>
-    <button onclick="window.location.href='/destroy'">reset</button>
+    <p class="chat"> User Counter :- {{ counter }} Times</p>
+    <p class="chat">Actual Counter :- {{ actuals }} Times</p>
+    <input type="range" id="nSlider" min="4" max="30" step="1" value="4">
+    <div>
+        <article><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p></article>
+        <section><p>5</p><p>10</p><p>15</p><p>20</p><p>25</p><p>30</p></section>
+    </div>
+
+    <section>
+        
+        <button onclick="window.location.href='/plus2'">+2</button>
+        <button onclick="window.location.href='/destroy'">Reset</button>
+        
+        <button type="button" onclick="setN()">Submit ➜ </button>
+        <button id="nBtn" disabled onclick="window.location.href='/plus/' + this.dataset.val">
+            + ?
+        </button>
+    </section>
+    <script>
+        // 🞑ᗒᗒᗒ take the slider value and put it in the +N button ᗕᗕᗕ🞑
+        function setN() {
+            const val = document.getElementById('nSlider').value;
+            const btn = document.getElementById('nBtn');
+            btn.textContent = '+' + val;
+            btn.dataset.val = val;
+            btn.disabled = false;
+        }
+    </script>
 </body>
 </html>

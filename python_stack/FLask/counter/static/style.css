@@ -1,7 +1,3 @@
-button:hover {
-    background-color: none;
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -11,13 +7,38 @@ body{
     gap: 4rem;
 }
 h1{
-    font-size: 6em;
-}
-p{
     font-size: 4em;
 }
+.chat{
+    margin: 0.5em 0;
+    font-size: 1.8em;
+}
+article,section{
+    display: flex;
+    width: 25em;
+    justify-content: space-between;
+    margin-left: 1em;
+}
+div{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 26em;
+    font-size: 24px;
+}
+input{
+    width: 26em;
+    font-size: 24px;
+}
 button{
-    font-size: 2em;
+    font-size: 1.4em;
     width: 10em;
     height: 6em;
+    background-color: crimson;
+    color: cornsilk;
+}
+
+body>section:last-of-type{
+    gap: 2em;
+    width: 40em;
 }
