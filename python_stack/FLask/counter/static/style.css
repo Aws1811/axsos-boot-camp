@@ -1,0 +1,23 @@
+button:hover {
+    background-color: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+h1{
+    font-size: 6em;
+}
+p{
+    font-size: 4em;
+}
+button{
+    font-size: 2em;
+    width: 10em;
+    height: 6em;
+}
