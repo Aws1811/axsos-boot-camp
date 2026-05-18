@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    gap: 4em;
+}
+main{
+    width: 80em;
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+}
+section{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+    height: 10em;
+    border: 4px solid black;
+    gap: 0.5em;
+}
+textarea{
+    min-width: 82em;
+    max-height: 16em;
+    min-height: 16em;
+    max-width: 82em;
+
+}
+label,input{
+    font-size: 24px;
+}
+button{
+    width: 15em;
+    height: 3em;
+    background-color: brown;
+    color: white;
+    
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}

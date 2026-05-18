@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ninja gold</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <label for="">Your Gold: <input type="text" name="" value=" {{ gold }} " readonly></label>
+    <main> 
+        <section>
+            <h2>Farm</h2>
+            <p>(earns 15 to 20 golds)</p>
+            <form method="POST" action="/search">
+                <input type="hidden" name="location" value="farm">
+                <button type="submit">Find gold !</button>
+            </form>
+        </section>
+        <section>
+            <h2>cave</h2>
+            <p>earns 5 to 10 golds</p>
+            <form method="POST" action="/search">
+                <input type="hidden" name="location" value="cave">
+                <button type="submit">Find gold !</button>
+            </form>
+        </section>
+        <section>
+            <h2>house </h2>
+            <p>earns 2 to 5 golds </p>
+            <form method="POST" action="/search">
+                <input type="hidden" name="location" value="house">
+                <button type="submit">Find gold !</button>
+            </form>
+        </section>
+        <section>
+            <h2>casino</h2>
+            <p>earns 0 to 50 golds</p>
+            <form method="POST" action="/search">
+                <button type="submit">Find gold !</button>
+                <input type="hidden" name="location" value="casino">
+            </form>
+        </section>
+    </main>
+    <textarea name="" readonly>
+        {% for msg in messages %}
+        {{ msg }}
+        {% endfor %}
+    </textarea>
+</body>
+</html>
