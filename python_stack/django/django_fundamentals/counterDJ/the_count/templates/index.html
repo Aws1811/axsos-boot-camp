@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" type="text/css" href="{% static  'the_count/style.css' %}">
+</head>
+<body>
+    <div>
+        <h2>⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘𐔌</h2>
+        <h2> ▄︻デ══━一 💥 </h2>
+        <h2>⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘</h2>
+    </div>
+    <main>
+        <h1>Counter</h1>
+        <p class="chat"> User Counter :- {{ request.session.counter }} Times</p>
+        <p class="chat">Actual Counter :- {{ request.session.actuals }} Times</p>
+        <input type="range" id="nSlider" min="4" max="30" step="1" value="4">
+        <div>
+            <article><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p><p>|</p></article>
+            <section><p>5</p><p>10</p><p>15</p><p>20</p><p>25</p><p>30</p></section>
+        </div>
+
+        <section>
+            <button onclick="window.location.href='/plus2'">+2</button>
+            <button onclick="window.location.href='/destroy'">Reset</button>
+            <button type="button" onclick="setN()">Submit ➜ </button>
+            <button id="nBtn" disabled onclick="window.location.href='/plus/' + this.dataset.val">
+                + ?
+            </button>
+        </section>
+    </main>
+    <div>
+        <h2>⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘𐔌</h2>
+        <h2>(∩｀-´)⊃━☆ﾟ.*･｡ﾟ</h2>
+        <h2>⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘</h2>
+    </div>
+    <script>
+        // 🞑ᗒᗒᗒ take the slider value and put it in the +N button ᗕᗕᗕ🞑
+        function setN() {
+            const val = document.getElementById('nSlider').value;
+            const btn = document.getElementById('nBtn');
+            btn.textContent = '+' + val;
+            btn.dataset.val = val;
+            btn.disabled = false;
+        }
+    </script>
+</body>
+</html>
