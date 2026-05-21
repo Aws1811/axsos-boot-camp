@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess</title>
+    <link rel="stylesheet" href="{% static 'Number_game/style.css' %}">
+</head>
+<body>
+    <main >
+        <div>
+            <h1>Welcome My Friends!</h1>
+            <h3>here you are having a little gift!</h3>
+            <h3>but you need to pass the guess first in 3 attempts only</h3>
+        </div>
+        <button id="start_game" class="bts" >Start</button>
+        <form action="/" method="POST" class="the-form" >
+            <h3>The number is: {{ num }}</h3>
+            {% csrf_token %}
+            <label>Guess the number!</label>
+            <input type="number" name="the_answer" required>
+            <button type="submit" class="bts">Submit Answer</button>
+            <button onclick="window.location.href='/refresh/'" class="bts">Refresh Number</button>
+        </form>
+
+        {% if massage == 'correct' %}
+            <h3>Correct!</h3>
+        {% elif massage == 'close' %}
+            <h3>Close!</h3>
+        {% elif massage == 'high' %}
+            <h3>Too High!</h3>
+        {% elif massage == 'low' %}
+            <h3>Too Low!</h3>
+        {% endif %}
+
+
+    </main>
+    <script src="{% static 'Number_game/script.js' %}"></script>
+</body>
+</html>
