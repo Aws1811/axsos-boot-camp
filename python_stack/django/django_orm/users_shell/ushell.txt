@@ -1,0 +1,41 @@
+created 3 users:-
+
+user1 = Users.objects.create(first_name = "aws",last_name = "sleebi",email_address = "aws@gmail.com",age = 21)
+user1 = Users.objects.create(first_name = "chaker" , last_name = "ibraheem" , email_address = "chacker@gmail.com",age = "21")
+user1 = Users.objects.create(first_name = "jalil",last_name= "wasaya" , email_address = "jalil@gmail.com",age = "21")
+
+The Queries:-
+
+    ╭-retrieve all data 
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.all()__ })-⟡
+
+
+    ╭-retrieve the last user 
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.last()__ })-⟡
+
+
+    ╭-retrieve the first user 
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.first()__ })-⟡
+
+
+    ╭-change the user with id=3 so their last name is pancakes.
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __user1.last_name = "Pancakes"__ })-⟡
+
+
+    ╭-delete  the user with the id = 2 from database.
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.get(id = 2).delete()__ })-⟡
+
+
+    ╭-get all the users sorted by their first name.
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.order_by("first_name").all()__ })-⟡
+
+
+    ╭-get all the users sorted by their first name in descendinf order.
+    │
+    ╰┈➤ˎˊ˗  ⟡-({ __Users.objects.order_by("-first_name").all()__ })-⟡
