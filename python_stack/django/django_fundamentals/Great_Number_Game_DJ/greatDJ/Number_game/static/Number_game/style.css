@@ -41,7 +41,7 @@ input{
 .the-form{
     gap: 0.8em ;
     align-items: center;
-    display: none;
+    display: flex;
     text-shadow: 1px 1px 1px black;
     /* height: 5em; */
     flex-direction: column;
