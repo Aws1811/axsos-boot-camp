@@ -1,0 +1,71 @@
+1- we need to run the shell with this command :-
+
+from ninjas.models import Dojos , Ninjas
+
+#- (from ninjas.models) = enter ninjas app and inside it enter the models app.
+#- (import Dojos , Ninjas) = import the class we added.
+
+
+2- create 3 models :-
+
+Dojos.objects.create(name = 'aws' , city  = 'Russa' , state = 'honkgong')
+
+ Dojos.objects.create(name = 'aws' , city  = 'Ramallah' , state = 'almseoon')
+
+  Dojos.objects.create(name = 'aws' , city  = 'Tulkarm' , state = 'znaba')
+
+  
+
+3-  delete the 3 models that we have created :-
+
+Dojos.objects.all().delete
+
+4- create another 3 dojos :-
+
+Dojos.objects.create(name = 'aws' , city = 'ola' , state = ' lolool')
+
+Dojos.objects.create(name = 'aws' , city = 'ula' , state = 'lomine')
+
+Dojos.objects.create(name = 'verso' , city = 'old lumiare' , state = 'picto')
+
+5- create 3 ninjas realted to the first dojo :-
+
+Ninjas.objects.create(dojo_id = 1 , first_name = "hoka" , last_name = "gui")     
+
+Ninjas.objects.create(dojo_id = 1,first_name = "sasoke" , last_name = "otosheha")
+
+Ninjas.objects.create(dojo_id = 1 , first_name = "goma" , last_name = "gara")
+
+6- create 3 ninja realted to the secound dojo :-
+
+Ninjas.objects.create(dojo_id = 5 , first_name = "ahmad" , last_name = "mohsen")
+
+Ninjas.objects.create(dojo_id = 5 , first_name = "zohre" , last_name = "mansore")
+
+Ninjas.objects.create(dojo_id = 5 , first_name = "abdol" , last_name = "salem")
+
+7- create 3 ninja realted to the third dojo :-
+
+Ninjas.objects.create(dojo_id = 6 , first_name = "mohammed" , last_name = "the qaser")
+
+Ninjas.objects.create(dojo_id = 6 , first_name = "alsqoer" , last_name = "malem")
+
+Ninjas.objects.create(dojo_id = 6 , first_name = "kanoor" , last_name = "danom")
+
+8- Query: Retrieve all the ninjas from the first dojo :-
+
+Ninjas.objects.filter(id = 4)
+
+9-  Query: Retrieve all the ninjas from the last dojo :-
+
+Ninjas.objects.last()
+
+10 - Add a new text field called "desc" to your Dojo class:-
+
+we should go to the dojo class and it manually and make it nullable to avoide any error
+
+11- Create and run the migration files to update the table in your database.
+     If needed, provide a default value of "old dojo.
+
+12- create a new dojo
+Dojos.objects.create(name = "aws", city = "kama", state = "the monster")
