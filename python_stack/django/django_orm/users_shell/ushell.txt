@@ -23,7 +23,7 @@ The Queries:-
 
     ╭-change the user with id=3 so their last name is pancakes.
     │
-    ╰┈➤ˎˊ˗  ⟡-({ __user1.last_name = "Pancakes"__ })-⟡
+    ╰┈➤ˎˊ˗  ⟡-({ __ u1 = Users.objects.get(id=3) /u1.last_name = "pancakes"/u1.save() __ })-⟡
 
 
     ╭-delete  the user with the id = 2 from database.

@@ -30,11 +30,11 @@ Dojos.objects.create(name = 'verso' , city = 'old lumiare' , state = 'picto')
 
 5- create 3 ninjas realted to the first dojo :-
 
-Ninjas.objects.create(dojo_id = 1 , first_name = "hoka" , last_name = "gui")     
+Ninjas.objects.create(dojo_id = 4 , first_name = "hoka" , last_name = "gui")     
 
-Ninjas.objects.create(dojo_id = 1,first_name = "sasoke" , last_name = "otosheha")
+Ninjas.objects.create(dojo_id = 4,first_name = "sasoke" , last_name = "otosheha")
 
-Ninjas.objects.create(dojo_id = 1 , first_name = "goma" , last_name = "gara")
+Ninjas.objects.create(dojo_id = 4 , first_name = "goma" , last_name = "gara")
 
 6- create 3 ninja realted to the secound dojo :-
 
@@ -62,7 +62,7 @@ Ninjas.objects.last()
 
 10 - Add a new text field called "desc" to your Dojo class:-
 
-we should go to the dojo class and it manually and make it nullable to avoide any error
+we should go to the dojo class and  add it manually and make it nullable to avoide any error
 
 11- Create and run the migration files to update the table in your database.
      If needed, provide a default value of "old dojo.

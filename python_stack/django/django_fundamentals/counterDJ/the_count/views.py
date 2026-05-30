@@ -19,4 +19,4 @@ def destroy(request):
 def plus(request,val):
     request.session['counter'] =request.session.get('counter',0)+val
     return redirect('/')
-    
+

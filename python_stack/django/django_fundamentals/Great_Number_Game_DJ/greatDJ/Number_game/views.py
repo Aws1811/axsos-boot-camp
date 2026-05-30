@@ -16,6 +16,7 @@ def index(request):
             massage = 'low'
     return render(request,'NUmber_game/index.html', {
         'massage':massage,
+        # 'num' :result,
         })
 
 def guess(request):

@@ -14,7 +14,7 @@ def add_dojo(request):
         )
     return redirect('/')
 
-def add_ninja(request):
+def add_ninja(request): 
     if request.method == "POST":
         the_dojo = Dojos.objects.get(id = request.POST['select'])
         Ninjas.objects.create(
@@ -28,3 +28,4 @@ def delete_dojo(request):
     if request.method == 'POST':
         Dojos.objects.get(id = request.POST['dojo_id']).delete()
     return redirect('/')
+

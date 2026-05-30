@@ -47,7 +47,7 @@
                     <div class="flex flex-col gap-1">
                         <label class="text-slate-300 text-sm font-medium">Dojo</label>
                         <select name="select" class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-slate-300 outline-none w-full">
-                            <option value="">Select a Dojo</option>
+                            <option >Select a Dojo</option>
                             {% for dojo in dojos %}
                                 <option value="{{ dojo.id }}">{{ dojo.name }}</option>
                             {% endfor %}
@@ -70,7 +70,7 @@
                             <p class="text-slate-400 text-sm"> 
                                 Ninjas: 
                                 {% for ninja in dojo.ninjas.all %}
-                                    {{ ninja.first_name }} {{ ninja.last_name }}{% if not forloop.last %}, {% endif %}
+                                    {{ ninja.first_name }} {{ ninja.last_name }},
                                 {% empty %}
                                     No ninjas yet
                                 {% endfor %}

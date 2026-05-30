@@ -1,0 +1,30 @@
+# create 5 books
+book1 = Book.objects.create(title = "c sharp" , desc =  1) 
+book2 = Book.objects.create(title = "Java" , desc =  2)
+book3 = Book.objects.create(title = "Python" , desc =  3)
+book4 = Book.objects.create(title = "PHP" , desc =  4)
+book5 = Book.objects.create(title = "Ruby" , desc =  5)
+
+
+# create 5 authors
+author1 = Authors.objects.create(first_name = "Jane" , last_name = "Auston")
+author2 = Authors.objects.create(first_name = "Emily" , last_name = "nison")
+author3 = Authors.objects.create(first_name = "Fydo" , last_name = "Dost")
+author4 = Authors.objects.create(first_name = "Wilim" , last_name = "Shak")
+author5 = Authors.objects.create(first_name = "Law D." , last_name = "Water")
+
+# change the name of C sharp to C#
+book1=Book.objects.get(id = 1)
+book1.title = "C#"
+
+#change the firstname of auther 4  to bill
+author4 = Authors.objects.get(id=4)
+author4.title = "Bill"
+
+# assign the first author to the first 2 books 
+
+author1 = Authors.objects.get(id = 1)
+book1=Book.objects.get(id = 1)
+book2=Book.objects.get(id = 2)
+
+# this one still uncomplete
