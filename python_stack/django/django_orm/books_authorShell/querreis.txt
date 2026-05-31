@@ -21,10 +21,50 @@ book1.title = "C#"
 author4 = Authors.objects.get(id=4)
 author4.title = "Bill"
 
+
+
 # assign the first author to the first 2 books 
+# assign the secound auther to the first 3 books
+# assign the third auther to the first 4 books
+# assign the fourth auther to the first 5 books
+
 
 author1 = Authors.objects.get(id = 1)
-book1=Book.objects.get(id = 1)
-book2=Book.objects.get(id = 2)
+author2 = Authors.objects.get(id = 2)
+author3 = Authors.objects.get(id = 3)
+author4 = Authors.objects.get(id = 4)
 
-# this one still uncomplete
+book1 = Book.objects.get(id = 1)
+book2 = Book.objects.get(id = 2)
+book3 = Book.objects.get(id = 3)
+book4 = Book.objects.get(id = 4)
+book5 = Book.objects.get(id = 5)
+
+author1.the_book.add(book1,book2)
+author2.the_book.add(book1,book2,book3)
+author3.the_book.add(book1,book2,book3,book4)   
+author4.the_book.add(book1,book2,book3,book4,book5)
+
+# Retrieve all the authors for the 3rd book
+
+Authors.objects.filter(the_book = book3)
+or
+book3.authors.all()
+
+# Remove the first author of the 3rd book.
+
+book3.the_book.remove(Authors.objects.first())
+
+book3.authors_set.remove(Authors.objects.first()) # the default name 
+
+# Add the 5th author as one of the authors of the 2nd book.
+
+author5.the_book.add(book2)
+
+# Find all the books that the 3rd author is part of.
+
+author3.the_book.all()
+
+# Find all the authors that contributed to the 5th book.
+
+book5.authors.all()
