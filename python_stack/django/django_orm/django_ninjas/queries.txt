@@ -58,7 +58,7 @@ Ninjas.objects.filter(id = 4)
 
 9-  Query: Retrieve all the ninjas from the last dojo :-
 
-Ninjas.objects.last()
+Ninjas.objects.filter(dojo_id = Dojo.objects.last())
 
 10 - Add a new text field called "desc" to your Dojo class:-
 

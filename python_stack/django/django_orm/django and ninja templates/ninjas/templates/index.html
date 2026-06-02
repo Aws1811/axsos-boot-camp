@@ -18,15 +18,19 @@
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-1">
                         <label class="text-slate-300 text-sm font-medium">Name</label>
-                        <input name="name" type="text" placeholder="Enter dojo name" class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
+                        <input name="name" type="text" placeholder="Enter dojo name" required class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
                     </div>
                     <div class="flex flex-col gap-1">
                         <label class="text-slate-300 text-sm font-medium">City</label>
-                        <input name="city" type="text" placeholder="Enter city" class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
+                        <input name="city" type="text" placeholder="Enter city" required class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
                     </div>
                     <div class="flex flex-col gap-1">
                         <label class="text-slate-300 text-sm font-medium">State</label>
-                        <input name="state" type="text" placeholder="Enter state" class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
+                        <input name="state" type="text" placeholder="Enter state" required class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
+                    </div> 
+                    <div class="flex flex-col gap-1">
+                        <label class="text-slate-300 text-sm font-medium">the comment</label>
+                        <input name="desc" type="text" placeholder="optional" class="bg-slate-600 border border-slate-500 rounded-lg px-4 py-2 text-white placeholder-slate-400 outline-none w-full">
                     </div>
                     <button type="submit" class="mt-2 bg-slate-500 hover:bg-slate-400 text-white font-semibold py-2 rounded-lg transition-colors duration-200">Add Dojo</button>
                 </div>
@@ -75,7 +79,11 @@
                                     No ninjas yet
                                 {% endfor %}
                             </p>
-                            
+                            {% if dojo.desc is None %}
+                            <p>...</p>
+                            {% else %}
+                            <p class="text-white font-semibold"> {{ dojo.desc }}</p>
+                            {% endif %}
                         </div>
                         <form action="delete_user" method="post">
                             {% csrf_token %}

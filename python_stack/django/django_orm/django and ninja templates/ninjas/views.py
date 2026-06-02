@@ -1,31 +1,26 @@
 from django.shortcuts import render , redirect
-from .models import Dojos, Ninjas
+from .models import *
 
+# this method for reveal the main page 
 def index(request):
-    dojos = Dojos.objects.all()
+    dojos = the_shows()
     return render(request, 'index.html', {'dojos': dojos})
 
+# this method for adding a new method
 def add_dojo(request):
     if request.method == "POST":
-        Dojos.objects.create(
-            name = request.POST['name'],
-            city = request.POST['city'],
-            state = request.POST['state'],
-        )
+        create_dojo(request.POST)
     return redirect('/')
 
+# this method for adding new ninja
 def add_ninja(request): 
     if request.method == "POST":
-        the_dojo = Dojos.objects.get(id = request.POST['select'])
-        Ninjas.objects.create(
-            first_name = request.POST['first_name'],
-            last_name = request.POST['last_name'],
-            dojo = the_dojo
-        )
+        create_ninja(request.POST)
     return redirect('/')
 
+# this method for deleteing exiesting method
 def delete_dojo(request):
     if request.method == 'POST':
-        Dojos.objects.get(id = request.POST['dojo_id']).delete()
+        delete_dojos(request.POST)
     return redirect('/')
 

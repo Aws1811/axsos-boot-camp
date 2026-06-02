@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Authors</title>
+        <link rel="stylesheet" type="text/css" href="{% static  'style2.css' %}">
+    </head>
+    <body>
+        <main>
+            <h1>Add an Author</h1>
+            <form action="addauthor" method="post">
+                {% csrf_token %}
+                <label for="first_name">First_name</label>
+                <input type="text" name="first_name" required>
+                <label for="last_name">Last_name</label>
+                <input type="text" name="last_name" required>
+                <label for="note">Notes</label>
+                <textarea name="text"></textarea>
+                <button type="submit">Add</button>
+            </form>
+        </main>
+        <div>
+            <table>
+                <tr>
+                    <th><p>ID</p></td>
+                    <th><p>Name</p></td>
+                    <th><p>Action</p></td>
+                </tr>
+                    {% for author in the_author %}
+                    <tr>
+                        <td><p> {{ author.id }} </p></td>
+                        <td><p>{{ author.first_name }} {{ author.last_name }}</p> </td>
+                        <td><a href="result/author/{{ author.id }}">Action</a></td>
+                    </tr>
+                    {% endfor  %}
+            </table>
+        </div>
+        
+    </body>
+</html>
