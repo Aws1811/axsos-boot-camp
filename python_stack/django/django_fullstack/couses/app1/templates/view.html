@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style3.css' %}" >
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <h1>Are you sure you want to delete the following course?</h1>
+    <h2>Name: {{ the_id.name }} </h2>
+    <h2>Description:{{ the_id.desc }} </h2>
+    <button class="but"><a href="/">No</a></button>
+    <button class="but"><a href="{% url 'remove' the_id.id %}">Yes! I want to delete this</a></button>
+    </main>
+</body>
+</html>

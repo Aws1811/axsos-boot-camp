@@ -1,6 +1,30 @@
 from django.db import models
+# manager for errors and showing them  of length is not matches the condietion
+class ShowManager(models.Manager):
+    def show_valid(self,showData):
+        errors = {}
+        if len(showData['title']) < 2:
+            errors['title'] = "Show title should be 2 letters or more ,bro"
+        if len(showData['network']) <3:
+            errors['network'] = "Network must be more than 2 letters , bro"
+        if len(showData['desc']) <10:
+            errors['desc'] = "description need to be pretty and will written like 10 charcters , bro"
+        
+        # if release_date
+        return errors
+    def edit_valid(self,showData):
+        errors = {}
+        if len(showData['title']) < 2:
+            errors['title'] = "edited must be 2 letters or more"
+        if len(showData['network']) <3:
+            errors['network'] = "edited Network must be more than 2 letters "
+        if len(showData['desc']) <10:
+            errors['desc'] = "edited description must be more than 10 charcters"
+        return errors
+        
+        
 
-# Create your models here.
+
 # table of the data
 class Show(models.Model):
     title = models.CharField(max_length=50)
@@ -9,6 +33,7 @@ class Show(models.Model):
     desc = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    objects = ShowManager()
 
 
 # for creating a new show to the data

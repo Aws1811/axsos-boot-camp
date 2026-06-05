@@ -1,6 +1,6 @@
-from django.shortcuts import render , redirect
+from django.shortcuts import render , redirect ,HttpResponse
 from .models import *
-# Create your views here.
+from django.contrib import messages
 
 #for going to the add show index
 def index(request):
@@ -9,8 +9,15 @@ def index(request):
 # to start the form post request or go to editshow page
 def edit_show(request,id):
     if request.method=="POST":
-        update_show(request.POST,id)
-        return redirect("/")
+        errors = Show.objects.edit_valid(request.POST)
+        if len(errors) > 0:
+            for key,value in errors.items():
+                messages.error(request,value)
+            return redirect(f'/editshow/{id}')
+        else:
+            update_show(request.POST,id)
+            messages.success(request,"edited submited")
+            return redirect("/")
     else :
         show = get_show_id(id)
         return render(request, "editshow.html", {'show': show})
@@ -18,8 +25,16 @@ def edit_show(request,id):
 # for adding a new show or go to the addshow page
 def add_show(request):
     if request.method == 'POST' :
-        create_show(request.POST)
-        return redirect ('/')
+        errors = Show.objects.show_valid(request.POST)
+        if len(errors)  >0:
+            for key,value in errors.items():
+                messages.error(request,value)
+            return redirect('addshow')
+        else:
+            create_show(request.POST)
+            messages.success(request, "Show is created pal.")
+            return redirect ('/')
+
     else :
         return render(request, "addshow.html")
 
