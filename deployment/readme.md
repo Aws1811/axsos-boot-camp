@@ -1,18 +1,14 @@
-# 🚀 Django Deployment on AWS — Full Detailed Guide
+#  Django Deployment on AWS — Full Detailed Guide
 
 ---
 
-## 💻 Part 1 — Local Machine Setup
+##  Part 1 — Local Machine Setup
 
 ### 1. Open Git Bash and activate your virtual environment:
-```bash
-source my_environments/djangoPy3Env/Scripts/activate
-```
+
 
 ### 2. Navigate to your project folder:
-```bash
-cd ~/Desktop/axsos/python_stack/django/django_fullstack/semiRestful_TV_Shows-validated
-```
+
 
 ### 3. Generate requirements.txt:
 ```bash
@@ -29,9 +25,13 @@ EOF
 ```
 > ⚠️ Type this manually, don't paste it
 
-> ℹ️ **Note:** If your virtual environment folder is outside your project folder, you don't need to add `env/` or `venv/` to `.gitignore`
+>  **Note:** If your virtual environment folder is outside your project folder, you don't need to add `env/` or `venv/` to `.gitignore`
+
+> i prefer if you do this step by adding or removing the file by yourself
+
 
 ### 5. Initialize Git and push to GitHub:
+> 🛑‼️‼️ make new repo before this step then get the link inside the new repo to use it here
 ```bash
 git init
 git add .
@@ -60,6 +60,8 @@ git push -u origin main
 | Name | `django-server` |
 | OS | Ubuntu Server 24.04 LTS (Free tier eligible) |
 | Instance type | `t3.micro` |
+> ‼️you can use other free things but this is the defult once
+
 
 ### 4. Create Key Pair:
 - Scroll down to **"Key pair"** section
@@ -84,7 +86,7 @@ git push -u origin main
 
 ---
 
-## 🔗 Part 3 — Connect to the Server
+##  Part 3 — Connect to the Server
 
 ### 1. Get the SSH command from AWS:
 - Click on your instance in AWS Console
@@ -121,7 +123,7 @@ ubuntu@ip-172-xx-xx-xx:~$
 
 ---
 
-## 🛠️ Part 4 — Setup the Server
+##  Part 4 — Setup the Server
 
 Run these commands one by one inside the server terminal:
 
@@ -150,7 +152,7 @@ sudo apt install python3.12-venv
 
 ---
 
-## 📁 Part 5 — Setup the Project on Server
+##  Part 5 — Setup the Project on Server
 
 ### 1. Clone your project from GitHub:
 ```bash
