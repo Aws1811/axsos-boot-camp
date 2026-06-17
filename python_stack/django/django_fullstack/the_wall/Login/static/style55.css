@@ -1,0 +1,49 @@
+*{
+    margin: 0.2em;
+}
+body{
+    background-color: #b8cfc1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    background-color: #406d50;
+    height: 9em;
+}
+h3{
+    font-size: 30px;
+    color: #6fc3df;
+}
+p{
+    font-size: 20px;
+}
+.comment{
+    height: fit-content;
+    margin-left: 5em;
+    border-radius: 20px;
+    padding: 0.5em;
+    width: fit-content;
+    background-color: aquamarine;
+}
+.comment h3{
+    
+    font-size: 24px;
+    color: #20614b;
+}
+button{
+    width: 6em;
+    height: 4em;
+}
+a{
+    font-size: 22px;
+    color: #dcdc8c;
+}
+body>a:first-of-type{
+    color: rgb(22, 91, 48);
+    font-size: 24px;
+}

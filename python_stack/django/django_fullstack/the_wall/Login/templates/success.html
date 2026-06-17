@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style55.css' %}">
+    <title>Document</title>
+</head> 
+<body>
+    <h1>Success , Welcome , {{ user.first_name }}</h1>
+    <a href="{% url 'logout'  %}">LogOUT</a>
+    <form action="/send/" method="post">
+        {% csrf_token %}
+        <label for="">Post message</label>
+        <textarea name="message" id=""></textarea>
+        <button type="submit">post message</button>
+    </form>
+    <main>
+        {% for message in vmes %}
+        <div>
+            <h3>{{ message.user.first_name }} {{ message.user.last_name }} -- {{ message.created_at }} </h3>
+            <p> {{ message.message }} </p>
+            {% if user == message.user %}
+                <a href="/delete/{{ message.id }}"> Delete </a>
+                {% endif %}
+        </div>
+
+            {% for comment in message.comments.all  %}
+        <div class="comment">
+            <h3>{{ comment.user.first_name }} {{ comment.user.last_name }} -- {{ comment.created_at }} </h3>
+            <p> {{ comment.commet }} </p>
+        </div>
+            {% endfor %}
+
+            <form action="/comme/" method="post">
+                {% csrf_token %}
+                <label for="">post a comment</label>
+                <input type="hidden" name="message_id" value="{{ message.id }}">
+                <textarea name="comment" id=""></textarea>
+                <button type="submit"></button>
+            </form>
+        {% endfor %}
+
+
+                
+                
+    </main>
+</body>
+</html>
