@@ -1,17 +1,33 @@
 package com.axsos.alfredo;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Date;
 public class AlfredQuotes {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public String basicGreeting() {
+        // You do not need to code here, this is an example method
+        return "Hello, lovely to see you. How are you?";
+    }
+
+    public String guestGreeting(String name) {
+        return String.format("Hello, %s . Lovely to see you.",name);
+    }
+
+    public String dateAnnouncement() {
+        return String.format("it is currently %s" , new Date().toString());
+    }
+
+    public String respondBeforeAlexis(String conversation) {
+        if(conversation.indexOf("Alexis")!=-1){
+            return "Right away, sir";
+
+        }else if(conversation.indexOf("Alfred") != -1){
+            return "At your service , as always sir";
+        }else{
+            return "I'm not sure what you need , sir";
         }
     }
+
+    // NINJA BONUS
+    // See the specs to overload the guestGreeting method
+    // SENSEI BONUS
+    // Write your own AlfredQuote method using any of the String methods you have learned!
 }
