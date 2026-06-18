@@ -1,0 +1,51 @@
+package javaCafe;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class CafeUtil {
+    
+    // تعريف Scanner واحد مشترك على مستوى الكلاس لقراءة البيانات بأمان في كل الدوال
+    private Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+    }
+    
+    public int getStreakGoal() {
+        System.out.print("Input your number: ");
+        int n = scanner.nextInt();
+        scanner.nextLine(); // تنظيف السطر بعد قراءة الرقم (خيار آمن)
+        
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        System.out.println("Your result is: " + sum);
+        return sum; // تم حذف scanner.close() لمنع انهيار البرنامج لاحقاً
+    }
+
+    public double getOrderTotal(double[] lineItems) {
+        double x = 0;
+        for (int i = 0; i < lineItems.length; i++) {
+            x += lineItems[i];
+        }
+        return x;
+    }
+
+    public void displayMenu(ArrayList<String> menuItems) {
+        for (int i = 0; i < menuItems.size(); i++) {
+            System.out.printf("%d %s%n", i, menuItems.get(i));
+        }
+    }
+
+    public void addCustomer(ArrayList<String> customers) {
+        System.out.print("Enter your name: ");
+        // تم استبدال System.console() بالـ scanner لتجنب خطأ الـ NullPointerException
+        String username = scanner.nextLine(); 
+        
+        System.out.println("Hello " + username);
+        // تم إضافة %n في نهاية النص وفصل المتغير بشكل صحيح داخل الـ printf
+        System.out.printf("There are %d people in front of you.%n", customers.size());
+        
+        customers.add(username);
+    }
+}

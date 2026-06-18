@@ -1,0 +1,13 @@
+package javaCafe;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        CafeUtil cafeUtil = new CafeUtil();
+
+        int result = cafeUtil.getStreakGoal();
+
+        System.out.println(result);
+    }
+}

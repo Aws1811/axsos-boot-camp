@@ -1,0 +1,22 @@
+package javaCafe;
+import java.util.Scanner;
+public class CafeUtil {
+	public static void main(String[] args) {
+	}
+	
+	public int getStreakGoal() {
+		System.out.println("input your number :" );
+		Scanner scanner = new Scanner(System.in);
+		
+		int n = scanner.nextInt();
+		System.out.println("your number :" + n);
+		int sum = 0;
+		for (int i =1 ; i<=n ; i++) {
+			sum+=i ;
+		}
+		scanner.close(); 
+		return sum;
+		
+	}
+	}
+
