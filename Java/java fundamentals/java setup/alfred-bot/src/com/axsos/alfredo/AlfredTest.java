@@ -1,4 +1,5 @@
 package com.axsos.alfredo;
+import java.util.Date;
 public class AlfredTest {
     /*
      * This main method will always be the launch point for a Java application
@@ -12,6 +13,7 @@ public class AlfredTest {
         // Make some test greetings, providing any necessary data
         String testGreeting = alfredBot.basicGreeting();
         String testGuestGreeting = alfredBot.guestGreeting("Beth Kane");
+        String timeGuestGreeting = alfredBot.guestGreeting("beth Kane",new Date());
         String testDateAnnouncement = alfredBot.dateAnnouncement();
 
         String alexisTest = alfredBot.respondBeforeAlexis(
@@ -32,5 +34,7 @@ public class AlfredTest {
          System.out.println(alexisTest);
          System.out.println(alfredTest);
          System.out.println(notRelevantTest);
+         System.out.println(timeGuestGreeting);
     }
 }
+

@@ -6,6 +6,21 @@ public class Main {
 
         CafeUtil cafeUtil = new CafeUtil();
 
+        ArrayList<String> cust = new ArrayList<String>();
+            cafeUtil.addCustomers(cust);
+
+        cafeUtil.printPriceChart("coffee",6.00,6);
+        ArrayList <String> items = new ArrayList<String>();
+        items.add("coffee");
+        items.add("mocha");
+        items.add("tea");
+
+        ArrayList <Double> order = new ArrayList<Double>();
+        order.add(4.33);
+        order.add(2.11);
+        order.add(9.54);
+        cafeUtil.displayMenu(items,order);
+
         System.out.println("\n----- Streak Goal Test -----");
         int result = cafeUtil.getStreakGoal();
 
@@ -18,7 +33,7 @@ public class Main {
         double total = cafeUtil.getOrderTotal(lineItems);
 
         System.out.println(total);
-        
+
         ArrayList<String> menu = new ArrayList<String>();
 
         menu.add("drip coffee");
@@ -34,6 +49,7 @@ public class Main {
           for (int i = 0; i < 4; i++) {
               cafeUtil.addCustomer(customers);
               System.out.println("\n");
+
           }
     }
 }

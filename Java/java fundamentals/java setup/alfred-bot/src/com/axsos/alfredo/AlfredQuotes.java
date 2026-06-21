@@ -1,4 +1,5 @@
 package com.axsos.alfredo;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 public class AlfredQuotes {
 
@@ -9,6 +10,20 @@ public class AlfredQuotes {
 
     public String guestGreeting(String name) {
         return String.format("Hello, %s . Lovely to see you.",name);
+    }
+    public String guestGreeting(String name, Date time){
+        String dayTime;
+        SimpleDateFormat hourFormat = new SimpleDateFormat("H");
+        int hour = Integer.parseInt(hourFormat.format(time));
+
+        if(hour <12){
+            dayTime = "morning";
+        } else if (hour <18) {
+            dayTime = "afternoon";
+        }else{
+            dayTime = "evening";
+        }
+        return String.format(" Good %s, how are you  %s" ,dayTime , name);
     }
 
     public String dateAnnouncement() {
