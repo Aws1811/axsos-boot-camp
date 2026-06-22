@@ -12,7 +12,6 @@ public class BankAccount {
     public  BankAccount(){
         accounts++;
     }
-
     // GETTERS
     // for checking, savings, accounts, and totalMoney
     public double getCheckingBalance(){
