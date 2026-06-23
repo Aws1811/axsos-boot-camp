@@ -46,6 +46,7 @@ public class CafeJava {
             System.out.println(customer2+readyMessage);
              String output = String.format("%s %s %s", customer2, displayTotalMessage, coppuciPrice);
             System.out.println(output);
+            System.out.printf("%s %s %s", customer2, displayTotalMessage, coppuciPrice);
         } else {
             System.out.println(pendingMessage);
         }
