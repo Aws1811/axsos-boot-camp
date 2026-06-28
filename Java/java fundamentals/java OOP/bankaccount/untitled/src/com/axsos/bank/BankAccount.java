@@ -1,15 +1,17 @@
 package com.axsos.bank;
+import java.util.Random;
 public class BankAccount {
     // MEMBER VARIABLES
     private double checkingBalance;
     private double savingsBalance;
+    private long accountNumber;
 
     private static int accounts;
     private static double totalMoney; // refers to the sum of all bank account checking and savings balances
-
     // CONSTRUCTOR
     // Be sure to increment the number of accounts
     public  BankAccount(){
+        accountNumber = gettingTenDigit();
         accounts++;
     }
     // GETTERS
@@ -17,6 +19,7 @@ public class BankAccount {
     public double getCheckingBalance(){
         return checkingBalance;
     }
+    public long getAccountNumber(){return accountNumber;}
     public double getSavingsBalance(){
         return savingsBalance;
     }
@@ -70,6 +73,9 @@ public class BankAccount {
         System.out.printf("this is your Saving account balance: %.2f%n",savingsBalance);
         System.out.printf("Your total balance: %.2f%n",checkingBalance + savingsBalance);
     }
-
+    private long gettingTenDigit(){
+        Random random = new Random();
+        return random.nextLong(1000000000L ,9999999999L);
+    }
 
 }

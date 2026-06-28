@@ -1,4 +1,5 @@
 package com.axsos.bank;
+
 public class BankTest {
     public static void main(String[] args){
         // Create 3 bank accounts
@@ -36,7 +37,7 @@ public class BankTest {
         account3.withdraw(4000 , "checking");
         account3.getBalance();
 
-        System.out.println("Total money after withdraw: "+ account2.getTotalMoney());
+        System.out.println("Total money after withdraw: "+ account2.getTotalMoney() +"and his account number is "+ account2.getAccountNumber());
 
         // Static Test (print the number of bank accounts and the totalMoney)
 

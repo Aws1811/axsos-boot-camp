@@ -56,7 +56,7 @@ public  double getTotalO(){
     return total;
 }
 public void display(){
-    System.out.printf("Customer Name : %s" , name);
+    System.out.printf("Customer Name : %s%n" , name);
     for (Items item:theItem){
 
     System.out.printf("%s  -  $%.2f %n",item.getName(),item.getPrice());

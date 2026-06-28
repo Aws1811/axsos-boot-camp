@@ -18,8 +18,8 @@ public  class Painting extends Art {
     }
     @Override
     public void viewArt(){
-        System.out.printf(" this paint called %s which is painted by %s and here here story %s %n" ,getTitle() ,getAuthor(),getDescription());
-        System.out.printf("the main paint used here is %s it was a really good looking one fr %n" ,paintType );
+        System.out.printf(" this paint called %s which is painted by %s and here here story %s %n %n" ,getTitle() ,getAuthor(),getDescription());
+        System.out.printf("the main paint used here is %s it was a really good looking one fr %n %n" ,paintType );
     }
 
 }

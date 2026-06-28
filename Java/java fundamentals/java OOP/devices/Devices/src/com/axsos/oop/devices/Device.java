@@ -16,11 +16,18 @@ public class Device {
 
 //    this is the setter
     public void setBattery(int battery){
+        if(battery>0 && battery<100){
         this.battery = battery;
+        }else {
+            System.out.println("invalid battery lvl");
+        }
     }
 
 // this is for displaying the battery
     public void displayBattery(){
+        if(getBattery() <10){
+            System.out.println("⚠ BATTERY CRITICAL!");
+        }
         System.out.println("your battery charge now is : " + battery);
     }
 }

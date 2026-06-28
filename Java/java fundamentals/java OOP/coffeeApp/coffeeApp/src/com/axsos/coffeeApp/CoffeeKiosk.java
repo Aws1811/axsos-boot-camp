@@ -1,6 +1,7 @@
 package com.axsos.coffeeApp;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class CoffeeKiosk {
@@ -17,6 +18,26 @@ public class CoffeeKiosk {
 
 //        newItem.index = menu.size(); if we dont use setter we use this
         menu.add(newItem);
+    }
+    public void addMenuItemInput(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the new item u want to add to the list or press q to stop adding");
+        String itemName =scanner.nextLine();
+        while (!itemName.equals("q")){
+            System.out.println("enter item price");
+            try{
+            double price = Double.parseDouble(scanner.nextLine());
+
+            addMenuItem(itemName,price);
+            System.out.println("you can add new item or press q to stop the proccess");
+            itemName = scanner.nextLine();
+
+            }catch (NumberFormatException e){
+                System.out.println("invalid input type please enter the correct price");
+            }
+        }
+        System.out.println("Menu have been updated");
+        displayMenu();
     }
     public void displayMenu(){
         for(Items item:menu){
@@ -44,11 +65,21 @@ public class CoffeeKiosk {
 
         // Write a while loop to collect all user's order items
         while(!itemNumber.equals("q")) {
+            try{
+                int index = Integer.parseInt(itemNumber);
+                if(index <0 || index >= menu.size()){
+                    System.out.println("invalid number plaese choose a number conitining from the given menu ");
+                }else{
+                       Items selectItem = menu.get(index);
+                       order.addItem(selectItem);
+                       System.out.println(selectItem.getName() + " : has been add to your order do u wanna something else sir?");
 
+                }
+            }catch (NumberFormatException e){
+                System.out.println("plaese enter a valid number !!");
+            }
             // Get the item object from the menu, and add the item to the order
 
-            Items selectItem = menu.get(Integer.parseInt(itemNumber));
-            order.addItem(selectItem);
 
             // Ask them to enter a new item index or q again, and take their input
             System.out.println("Please enter a menu item or to quit enter q : ");

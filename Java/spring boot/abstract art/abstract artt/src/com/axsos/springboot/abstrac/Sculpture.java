@@ -18,7 +18,7 @@ public class Sculpture extends Art {
 //    TODO implement sculpture class
     @Override
     public void viewArt() {
-    System.out.printf("This sculpture is called %s, created by %s. %s %n", getTitle(), getAuthor(), getDescription());
-    System.out.printf("It is made of %s, truly a masterpiece! %n", material);
+    System.out.printf("This sculpture is called %s, created by %s. %s %n %n", getTitle(), getAuthor(), getDescription());
+    System.out.printf("It is made of %s, truly a masterpiece! %n %n", material);
 }
 }
