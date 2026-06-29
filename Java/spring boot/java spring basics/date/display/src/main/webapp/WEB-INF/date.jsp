@@ -4,9 +4,15 @@
 <head>
     <title>Date</title>
     <script src="/static/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<div>
 <h1>This is the date template</h1>
-<p style="color: blue;">${date}</p>
+<p>${date}</p>
+    <button> <a href="/">GoBack</a></button>
+
+</div>
 </body>
 </html>
