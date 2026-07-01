@@ -12,5 +12,6 @@
     </p>
     <a href="/" class="text-blue-500 font-bold hover:underline">Test another visit?</a>
 </div>
+
 </body>
 </html>

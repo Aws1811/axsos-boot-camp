@@ -18,4 +18,5 @@ public class CounterController {
     model.addAttribute("count",count);
     return "counter";
     }
+
 }
