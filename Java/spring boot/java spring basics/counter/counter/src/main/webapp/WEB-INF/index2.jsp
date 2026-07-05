@@ -6,8 +6,8 @@
 </head>
 <body>
 <div>
-<h1>Welcome User!</h1>
-<a href="/counter">Check visit count</a>
+    <h1>Welcome User to the secound page!!</h1>
+    <a href="/counter">Check visit count</a>
 </div>
 </body>
 </html>

@@ -10,8 +10,13 @@
         You have visited
         <span class="font-bold">${count} || <c:out value="${count}"></c:out></span> times.
     </p>
-    <a href="/" class="text-blue-500 font-bold hover:underline">Test another visit?</a>
+    <a href="/" class="text-blue-500 font-bold hover:underline">Test another visit for the first page?</a>
+    <p class="text-lg text-gray-700 mb-4">
+    <span class="font-bold">${count2} || <c:out value="${count2}"></c:out></span>    times.
+    </p>
+    <a href="/sec" class="text-blue-500 font-bold hover:underline">Test another visit for the secound page?</a>
+    <br>
+    <button><a href="/reset" class="display-block text-blue-500 font-bold hover:underline">reset</a></button>
 </div>
-
 </body>
 </html>

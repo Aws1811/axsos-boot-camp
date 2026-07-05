@@ -39,6 +39,9 @@ public class ninjaController {
     public String findGold(@RequestParam String place, HttpSession session){
             Random random = new Random();
             Integer total = (Integer) session.getAttribute("total");
+            String message ="";
+            String  color = "";
+
             if (total == null){
                 total = 0;
             }
@@ -47,13 +50,15 @@ public class ninjaController {
                 hobby =new ArrayList<>();
             }
             int amount = 0 ;
-            String message ="";
+            if(total<-100){
+                return "lose";
+            }
         if(place.equals("farm")){
             amount = random.nextInt(10,20)* (random.nextBoolean() ? -1:1);
             if(amount >0){
-                message = "you visited the farm it seems and have a good crop this time so you got an :- " + amount;
+                message = "you visited the farm it seems and have a good crop this time so you got an : " + amount;
             }else {
-                message = "you visited the farm but an unexpected storm comming so you lost equally an :-"+amount;
+                message = "you visited the farm but an unexpected storm comming so you lost equally an : "+amount;
             }
         }
         if(place.equals( "cave")){
@@ -82,13 +87,37 @@ public class ninjaController {
                 message="you accepted an quest but you failed it and lose your Registration fees for it : "+amount;
             }
         }
+        if(place.equals("spa")){
+            amount = random.nextInt(-20,-5);
+            message = "why even i came here ?!";
+        }
         total+=amount;
-        hobby.add(message);
+        hobby.add(0,message);
 
+        if(amount >0){
+            color = "green";
+
+        }else {
+            color = "red";
+        }
+        session.setAttribute("color",color);
         session.setAttribute("place" , place);
         session.setAttribute("total",total);
         session.setAttribute("hobby",hobby);
         session.setAttribute("message",message);
        return "redirect:/";
+    }
+    @RequestMapping("/reset")
+    public String reset(HttpSession session,Model model){
+        Integer total = (Integer) session.getAttribute("total");
+        ArrayList<String> hobby = (ArrayList<String>) session.getAttribute("hobby");
+        session.setAttribute("total", 0);
+        session.setAttribute("hobby",null);
+
+        return "redirect:/";
+    }
+    @RequestMapping("/loss")
+    public String lose(){
+        return "lose";
     }
 }
