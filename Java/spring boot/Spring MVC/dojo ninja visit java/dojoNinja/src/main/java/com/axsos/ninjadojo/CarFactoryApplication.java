@@ -1,4 +1,4 @@
-package com.axsos.carFactory;
+package com.axsos.ninjadojo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

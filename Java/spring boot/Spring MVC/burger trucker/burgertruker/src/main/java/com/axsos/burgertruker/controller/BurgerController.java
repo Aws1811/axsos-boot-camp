@@ -43,7 +43,6 @@ public class BurgerController {
     public String goToUpdate(@PathVariable("id")Long id,@ModelAttribute Burger burger, Model model){
          burger = burgerServices.findBurger(id);
         model.addAttribute("burger",burger);
-
         return "updatePage";
     }
 //    here to update the burger

@@ -18,9 +18,11 @@ public class BurgerServices {
     public List<Burger> allBurgers(){
         return burgerRepo.findAll();
     }
+
     public Burger createBurger(Burger burger){
         return burgerRepo.save(burger);
     }
+
     public Burger findBurger(Long id){
         Optional<Burger> optionalBurger = burgerRepo.findById(id);
         if(optionalBurger.isPresent()){

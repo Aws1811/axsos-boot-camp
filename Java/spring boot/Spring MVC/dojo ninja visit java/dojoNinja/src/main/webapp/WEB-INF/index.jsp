@@ -10,5 +10,20 @@
 </head>
 <body>
 
+    <h1> New Dojo</h1>
+
+    <form:form action="/create/dojo" method="post"  modelAttribute="dojos">
+
+        <form:label path="name"> enter the name of the dojo</form:label>
+        <form:input path="name"></form:input>
+        <form:errors path="name"></form:errors>
+
+        <button type="submit">submit</button>
+
+    </form:form>
+
+
+
+
 </body>
 </html>

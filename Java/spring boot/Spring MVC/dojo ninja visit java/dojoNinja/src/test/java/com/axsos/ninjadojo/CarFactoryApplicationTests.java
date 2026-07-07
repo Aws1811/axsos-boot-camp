@@ -1,4 +1,4 @@
-package com.axsos.carFactory;
+package com.axsos.ninjadojo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
