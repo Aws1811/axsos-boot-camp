@@ -3,7 +3,7 @@
 ## Preview
 
 ### Review
-[Watch the review video](review.mp4)
+[Watch the review video](https://drive.google.com/file/d/1nf32aukpuWjJE7nJM_4ZN6pN3EDsnSfl/view?usp=drive_link)
 ### Dashboard
 ![dashboard](dashboard.png)
 ### Add a Dorm Page
