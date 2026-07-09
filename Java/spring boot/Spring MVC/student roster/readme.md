@@ -3,7 +3,7 @@
 ## Preview
 
 ### Review
-<video src="review.mp4" controls="controls" style="max-width: 730px;"></video>
+[Watch the review video](review.mp4)
 ### Dashboard
 ![dashboard](dashboard.png)
 ### Add a Dorm Page
