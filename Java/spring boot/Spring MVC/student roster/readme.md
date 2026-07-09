@@ -3,7 +3,7 @@
 ## Preview
 
 ### Review
-![review](review.mp4)
+![review](review.MP4)
 ### Dashboard
 ![dashboard](dashboard.png)
 ### Add a Dorm Page
