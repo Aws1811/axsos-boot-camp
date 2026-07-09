@@ -29,7 +29,7 @@ public class DojoController {
     }
 
     @PostMapping("/create/dojo")
-    public String newDojo(Model model, @Valid @ModelAttribute Dojo dojo , BindingResult result){
+    public String newDojo(Model model, @Valid @ModelAttribute("dojos") Dojo dojo , BindingResult result){
         if(result.hasErrors()) {
             return "index";
         }
