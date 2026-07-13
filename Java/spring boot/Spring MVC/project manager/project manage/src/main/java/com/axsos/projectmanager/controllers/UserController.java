@@ -20,7 +20,7 @@ import java.util.List;
 
 // @Controller: an MVC controller that returns JSP views
 @Controller
-public class HomeController {
+public class UserController {
     private static final List<String>  countryOptions = Arrays.asList(
             "United States", "Palestine", "Canada", "United Kingdom",
             "Germany", "France", "India", "Egypt", "Jordan", "Other"
@@ -70,7 +70,7 @@ public class HomeController {
         // in other words, log them in.
         session.setAttribute("id", user.getId());
 
-        return "redirect:/home";
+        return "redirect:/projects";
     }
 
     // POST /login : handles the login form
@@ -96,27 +96,7 @@ public class HomeController {
         // in other words, log them in.
         session.setAttribute("id", user.getId());
 
-        return "redirect:/books";
-    }
-
-    // GET /home : the success page (dashboard).
-    // Only logged-in users are allowed to see it.
-    @GetMapping("/home")
-    public String home(HttpSession session, Model model) {
-
-        // Should the user try to access the success page without being
-        // logged in (no ID in session), they should be redirected
-        // to the login and registration page.
-        if (session.getAttribute("id") == null) {
-            return "redirect:/";
-        }
-
-        // Grab the logged-in user's ID from session and use it to
-        // fetch the user, so we can greet them by name on the page.
-        Long userId = (Long) session.getAttribute("id");
-        model.addAttribute("user", userServ.findUserById(userId));
-
-        return "home";
+        return "redirect:/projects";
     }
 
     // GET /logout : upon logging out,

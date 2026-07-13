@@ -62,28 +62,28 @@ public class User {
     private List<String>languages;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private List<Book> books;
+    private List<Project> projects;
 
     @OneToMany(mappedBy = "borrower", fetch = FetchType.LAZY)
-    private List<Book> borrowedBooks;
+    private List<Project> borrowedProjects;
 
 
     // Empty constructor required by JPA
     public User() {
     }
 
-    public User(Long id, String userName, String email, String password,List<Book> books,List<Book> borrowedBooks,
+    public User(Long id, String userName, String email, String password, List<Project> projects, List<Project> borrowedProjects,
                 String confirm, String country, String gender, LocalDate birthDay, List<String> languages) {
         this.id = id;
         this.userName = userName;
-        this.borrowedBooks = borrowedBooks;
+        this.borrowedProjects = borrowedProjects;
         this.email = email;
         this.password = password;
         this.confirm = confirm;
         this.country = country;
         this.gender = gender;
         this.birthDay = birthDay;
-        this.books =books;
+        this.projects = projects;
         this.languages = languages;
     }
 
@@ -92,12 +92,12 @@ public class User {
         return id;
     }
 
-    public List<Book> getBorrowedBooks() {
-        return borrowedBooks;
+    public List<Project> getBorrowedBooks() {
+        return borrowedProjects;
     }
 
-    public void setBorrowedBooks(List<Book> borrowedBooks) {
-        this.borrowedBooks = borrowedBooks;
+    public void setBorrowedBooks(List<Project> borrowedProjects) {
+        this.borrowedProjects = borrowedProjects;
     }
 
     public void setId(Long id) {
@@ -168,11 +168,11 @@ public class User {
         this.country = country;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public List<Project> getBooks() {
+        return projects;
     }
 
-    public void setBooks(List<Book> books) {
-        this.books = books;
+    public void setBooks(List<Project> projects) {
+        this.projects = projects;
     }
 }

@@ -5,14 +5,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Add a Book</title>
+    <title>Change your Entry</title>
 </head>
 <body>
 
-<h1>Add a Book to Your Shelf!</h1>
-<a href="/books">back to the shelves</a>
+<h1>Change your Entry</h1>
+<a href="/projects">back to the shelves</a>
 
-<form:form action="/books/create/new" method="post" modelAttribute="books">
+<form:form action="/projects/update/${projects.project_id}/edit" method="post" modelAttribute="projects">
+    <form:hidden path="project_id" />
+
     <div>
         <form:label path="title">Title</form:label>
         <form:input path="title" />
@@ -20,9 +22,9 @@
     </div>
 
     <div>
-        <form:label path="authorName">Author</form:label>
-        <form:input path="authorName" />
-        <form:errors path="authorName" />
+        <form:label path= "dueDate">Date</form:label>
+        <form:input type="Date" path= "dueDate" />
+        <form:errors path="dueDate" />
     </div>
 
     <div>

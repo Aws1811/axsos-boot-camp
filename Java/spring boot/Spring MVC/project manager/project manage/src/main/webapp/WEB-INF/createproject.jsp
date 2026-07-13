@@ -5,26 +5,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Change your Entry</title>
+    <title>Add a Book</title>
 </head>
 <body>
 
-<h1>Change your Entry</h1>
-<a href="/books">back to the shelves</a>
+<h1>Add a Book to Your Shelf!</h1>
+<a href="/projects">back to the shelves</a>
 
-<form:form action="/books/update/${books.book_id}/edit" method="post" modelAttribute="books">
-    <form:hidden path="book_id" />
-
+<form:form action="/projects/create/new" method="post" modelAttribute="projects">
     <div>
         <form:label path="title">Title</form:label>
         <form:input path="title" />
         <form:errors path="title" />
     </div>
 
+<%--        <form:label path= "leaderName">Author</form:label>--%>
+<%--        <form:input path= "leaderName" readonly="true" value="${user.userName}" />--%>
+<%--        <form:errors path="leaderName" />--%>
+
     <div>
-        <form:label path="authorName">Author</form:label>
-        <form:input path="authorName" />
-        <form:errors path="authorName" />
+        <form:label path="dueDate">Due Date</form:label>
+        <form:input type="Date" path="dueDate" />
+        <form:errors path="dueDate" />
     </div>
 
     <div>
