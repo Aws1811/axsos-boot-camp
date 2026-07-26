@@ -20,20 +20,25 @@ class Unit extends Card{
 
 // change the unit stats(res/power)
 class Effect extends Card{
-    constructor(name,cost,magnitude,stat){
+    constructor(name,cost,magnitude,text,stat){
         super(name,cost);
         this.magnitude= magnitude;
         this.stat= stat;
+        this.text = text;
     }
 
     play(target){
         // is the target is a unit?
         if(target instanceof Unit){
-            // we use this here cuz it is an array
-            if(target.stat === "res"){
+            if(this.stat === "res"){
                 target.res +=  this.magnitude;
-            }else if(target.stat === "power"){
+                this.magnitude>0 ? console.log("you have increased in res by" + this.magnitude)
+                :console.log("you have decreased in res by" + this.magnitude);
+                
+            }else if(this.stat === "power"){
                 target.power += this.magnitude;
+                 this.magnitude>0 ? console.log("you have increased in power by" + this.magnitude)
+                :console.log("you have decreased in power by" + this.magnitude);
             }
         }else{
             throw new Error("target must be unit!");
@@ -41,24 +46,3 @@ class Effect extends Card{
 
     }
 }
-
-
-// const ninja = new Unit("Red Belt Ninja", 3, 3, 4); // 3 power, 4 res
-// const hardAlgorithm = new Effect("Hard Algorithm", 2, 3, "res"); // +3 to res
-
-// hardAlgorithm.play(ninja);
-// console.log(ninja.res); // 7 ✅ (4 + 3)
-
-// const attacker = new Unit("Enemy", 1, 2, 5);
-// attacker.attack(ninja);
-// console.log(ninja.res); // 5 ✅ (7 - 2)
-
-
-const ninja = new Unit("jalil",9,7,4);
-const chaker = new Effect("chacler",10,19,"res");
-chaker.play(ninja);
-console.log(ninja);
-
-const murad = new Unit("murad",20,20,10);
-murad.attack(ninja);
-console.log(ninja);

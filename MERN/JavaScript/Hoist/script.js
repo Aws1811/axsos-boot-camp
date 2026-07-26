@@ -127,7 +127,9 @@ console.log(dojo); // san jose
 // 8
 
 function makeDojo(name, students) {
-  const dojo = {};
+  const dojo;
+
+  dojo = {};
 
   dojo.name = name;
 
