@@ -1,0 +1,32 @@
+body{
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(101, 114, 75);
+}
+ul{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 30px;
+  gap: 2em;
+}
+
+h1{
+  font-size: 70px;
+  text-align: center;
+}
+h2{
+  font-size: 50px;
+  text-align: center;
+}
+li{
+  font-size: 30px;
+}
+div{
+  border: 2px solid black;
+  background-color: antiquewhite;
+  padding: 1em;
+}
