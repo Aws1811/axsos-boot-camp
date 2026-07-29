@@ -1,0 +1,15 @@
+.red,.purple,.green{
+  width: 100px;
+  height: 100px;
+}
+.red{
+  background-color: red;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.green{
+  background-color: green;
+}
