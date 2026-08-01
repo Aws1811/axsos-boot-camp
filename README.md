@@ -1,55 +1,43 @@
-# Web Fundamentals Assignments
+# Axsos Academy — Full-Stack Development Bootcamp
 
-This repository contains my assignments and practice projects for the **Web Fundamentals** track at **Axsos Academy**.
+My complete coursework from the Axsos Academy Full-Stack Development program: **192 commits across six tracks**, covering front-end fundamentals, three back-end stacks, relational databases, and deployment.
 
-The purpose of this repository is to document my learning journey and showcase the work I complete while building a strong foundation in front-end web development.
+Each folder is a self-contained track with its own assignments and mini-projects.
 
-## Topics Covered
+---
 
-Throughout these assignments, I work on:
+## Tracks
 
-- HTML
-- CSS
-- JavaScript
-- Page structure and layout
-- Styling and responsiveness
-- Basic interactivity
-- Problem-solving through front-end tasks
+| Folder             | Focus                                                      | Technologies                     |
+| ------------------ | ---------------------------------------------------------- | -------------------------------- |
+| `web-fundamentals` | Page structure, styling, responsiveness, DOM interactivity | HTML5, CSS3, JavaScript          |
+| `python_stack`     | Server-side development, ORM, routing, templating          | Python, Flask, Django            |
+| `Java`             | Object-oriented programming, REST APIs, MVC architecture   | Java, Spring Boot                |
+| `MERN`             | Component-based UIs, client-side routing, REST integration | MongoDB, Express, React, Node.js |
+| `MySQL`            | Schema design, joins, queries, relational modelling        | SQL, MySQL Workbench             |
+| `deployment`       | Publishing applications to a live server                   | AWS                              |
 
-## Repository Purpose
+---
 
-This repository is mainly used to:
+## Language Breakdown
 
-- Submit assignments for the Web Fundamentals course
-- Track my progress as I learn
-- Practice writing clean and organized code
-- Build a solid foundation for future web development projects
+Java 38.7% · Python 21.3% · HTML 20.1% · CSS 13% · JavaScript 6.8%
 
-## What You Will Find Here
+---
 
-Inside this repository, you may find:
+## Featured Project
 
-- Homework assignments
-- Small practice exercises
-- Mini front-end projects
-- Examples using HTML, CSS, and JavaScript
-- Learning experiments and coding challenges
+The capstone built during this program lives in its own repository:
 
-## Learning Goal
+**[HerjaHub](https://github.com/Aws1811/HerjaHub)** — a multi-vendor e-commerce platform for Palestinian artisans. Java, JSP, MySQL, role-based authentication, AI-assisted search, deployed on AWS.
 
-My goal is to improve my understanding of how websites are built, styled, and made interactive using core web technologies.
+---
 
-## About Axsos Academy
+## About This Repository
 
-These assignments are part of my training at **Axsos Academy**, where I am developing my programming and web development skills through hands-on practice and projects.
+This is a learning repository. The code here spans from my first HTML page to full back-end applications, and the progression is visible in the commit history. Earlier assignments are intentionally simple; later work in the Java and MERN tracks reflects production patterns.
 
-## Notes
+---
 
-- This repository is for educational purposes
-- Projects may vary in complexity depending on the topic covered in class
-- Some assignments are simple practice tasks, while others are more complete mini-projects
-
-## Author
-
-**Aws sleebi**  
-Student at **Axsos Academy**
+**Aws Sleebi**
+[GitHub](https://github.com/Aws1811) · [LinkedIn](https://www.linkedin.com/in/aws-sleebi-9225583b3/) · aws97801@gmail.com
