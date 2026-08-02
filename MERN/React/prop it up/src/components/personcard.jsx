@@ -2,6 +2,7 @@ import React from 'react';
 
 const PersonCard = (props) => {
   const { firstName, lastName, age, hairColor } = props;
+  
 
   return (
     <div>
@@ -13,3 +14,5 @@ const PersonCard = (props) => {
 }
 
 export default PersonCard;
+
+

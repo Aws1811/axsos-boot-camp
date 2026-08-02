@@ -1,0 +1,6 @@
+.side-bar {
+  background-color: #6fa8dc;
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
+}

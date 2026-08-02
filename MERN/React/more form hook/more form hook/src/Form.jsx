@@ -123,6 +123,7 @@ function Form() {
                         onChange={hundleErrorsEmail}
                     />
                 </div>
+                <button type="submit">submit</button>
                 <section>
                     <div>
                         <label>
