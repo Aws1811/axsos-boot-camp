@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Box from "./box";
+import Box from "./components/box";
 
 function App() {
     return(
