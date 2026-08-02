@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ToDoList = () => {
     const [task, setTask] = useState([]);
-    const [newTaskInput, setNewTaskInput] = useState([]);
+    const [newTaskInput, setNewTaskInput] = useState("");
 
     const addTask = (e) => {
         e.preventDefault();

@@ -9,6 +9,7 @@
     background-color: white;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tab-header.active {
@@ -20,4 +21,14 @@
     border: 1px solid #ccc;
     padding: 20px;
     min-height: 100px;
+    animation: fadeIn 1.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

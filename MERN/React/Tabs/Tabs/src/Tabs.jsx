@@ -1,7 +1,14 @@
 import { useState } from "react";
-import './App.css';
+import "./App.css";
 const Tabs = (props) => {
-    const [activeIndex, setActiveIndex] = useState(0); 
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const handleTabClick = (index, tab) => {
+        setActiveIndex(index);
+        if (tab.onClick) {
+            tab.onClick();
+        }
+    };
 
     return (
         <>
@@ -10,18 +17,17 @@ const Tabs = (props) => {
                     <button
                         key={index}
                         className={
-                            activeIndex === index ? "tab-header active" 
-                            : "tab-header"
+                            activeIndex === index
+                                ? "tab-header active"
+                                : "tab-header"
                         }
-                        onClick={() => setActiveIndex(index)}
+                        onClick={()=>handleTabClick(index,tab)}
                     >
                         {tab.label}
                     </button>
                 ))}
             </div>
-            <div className="tab-content">
-                {props.tabs[activeIndex].content}
-            </div>
+            <div className="tab-content" key={activeIndex}>{props.tabs[activeIndex].content}</div>
         </>
     );
 };

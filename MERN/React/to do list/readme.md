@@ -1,10 +1,8 @@
 # To Do List
 
-> **Note:** This is a temporary README and will be updated later with photos.
-
 ## Preview
 
-No photos provided for this assignment.
+![home page](image.png)
 
 ## Run the app
 
