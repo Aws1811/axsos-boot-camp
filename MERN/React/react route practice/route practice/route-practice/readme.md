@@ -1,10 +1,22 @@
 # React Router
 
-> **Note:** This is a temporary README and will be updated later with photos.
-
 ## Preview
 
-No photos provided for this assignment.
+### Home Page
+
+![home page](home.png)
+
+### Number Page
+
+![number page](number.png)
+
+### Word Page
+
+![word page](word.png)
+
+### Color Page
+
+![color page](color.png)
 
 ## Run the app
 
@@ -16,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Then open your browser at: `http://localhost:5173`
+Then open your browser at: `http://localhost:5174`
 
 ## Built With
 
