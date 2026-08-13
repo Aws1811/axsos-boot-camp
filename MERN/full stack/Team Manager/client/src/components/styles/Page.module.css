@@ -1,0 +1,44 @@
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.page h1 {
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+.table tr:hover {
+    background-color: #f8fafc;
+}
+
+.gameLink {
+    font-size: larger;
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.gameLink:hover {
+    text-decoration: underline;
+}
